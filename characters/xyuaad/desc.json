@@ -1,0 +1,108 @@
+{
+  "identity": {
+    "name": "Xyuaad Kleufi",
+    "pronunciation": "zyu-odd clue-fee",
+    "username": "systemicDownfalls",
+    "age": 8,
+    "sign": {
+      "extended": "Gemlo",
+      "caste": "Gold"
+    },
+    "species": "Troll",
+    "pronouns": [
+      [
+        "she",
+        "her"
+      ]
+    ],
+    "gender": "Female",
+    "height": 75
+  },
+  "owners": [
+    {
+      "name": "Varcan",
+      "url": "https://twitter.com/VarcanOctave"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "S|s",
+        "$$"
+      ],
+      [
+        "E|e",
+        "6"
+      ],
+      [
+        "\\.",
+        ""
+      ]
+    ],
+    "functions": []
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "S|s",
+        "$$"
+      ],
+      [
+        "e",
+        "6"
+      ],
+      [
+        "\\.",
+        ""
+      ]
+    ],
+    "functions": []
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "yes",
+    "ship": "yes",
+    "fanfiction": "ask"
+  },
+  "preferences": {
+    "loves": [
+      "Cake",
+      "Hexagons",
+      "Talking to fans that aren't highbloods"
+    ],
+    "likes": [
+      "Geometric shapes",
+      "Honey",
+      "Anything sweet"
+    ],
+    "neutral": [],
+    "dislikes": [
+      "Grubsauce",
+      "Snow"
+    ],
+    "hates": [
+      "Bland food"
+    ]
+  },
+  "facts": [
+    "Hexagon glasses are entirely for looks",
+    "Blocks any fans above the blue caste",
+    "Only likes ONE highblood in the indigo caste"
+  ],
+  "colors": [
+    "#000000",
+    "#ffd803",
+    "#ffab03",
+    "#ff6803",
+    "#c5c5c5",
+    "#36a64c",
+    "#be46cc",
+    "#daff22",
+    "#2b2b2b",
+    "#ad9520",
+    "#121212",
+    "#1e1e1e",
+    "#819520"
+  ]
+}

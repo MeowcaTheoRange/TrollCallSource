@@ -1,0 +1,46 @@
+// now THIS is where shit gets SLOPPY
+
+body {
+  background-image: url("/TrollCall/assets/images/pattern.svg");
+}
+
+box[pattern] {
+  // Decreases legibility, but it is a cool pattern.
+  background-image: url("/TrollCall/assets/images/pattern.svg");
+}
+.imageHolder {
+  min-width: 300px !important;
+}
+
+slotObject {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: black;
+}
+
+div.hoverlabel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  visibility: hidden;
+  pointer-events: none;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--pri90);
+  background-color: var(--pri10);
+  color: var(--pri90);
+  font-family: 'Inconsolata', monospace;
+
+  & div.label {
+    font-weight: bold;
+  }
+
+  & div.name {
+    color: var(--pri50);
+  }
+}

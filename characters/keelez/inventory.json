@@ -1,0 +1,10 @@
+{
+  "inventory": [
+    null, null, null, null, null, null, null, null, null,
+    null, null, null, null, {"id":"paper","name":"I don't play Minecraft."}, null, null, null, null,
+    null, null, null, null, null, null, null, null, null
+  ],
+  "hotbar": [
+    null, null, null, null, null, null, null, null, null
+  ]
+}

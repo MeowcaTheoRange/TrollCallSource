@@ -1,0 +1,109 @@
+{
+  "identity": {
+    "name": "Archan Scurra",
+    "pronunciation": "ark-can skur-ra",
+    "username": "theaterMenace",
+    "age": 8,
+    "sign": {
+      "extended": "Caprira",
+      "caste": "Purple"
+    },
+    "species": "Troll",
+    "pronouns": [
+      [
+        "he",
+        "him"
+      ],
+      [
+        "she",
+        "her"
+      ],
+      [
+        "they",
+        "them"
+      ]
+    ],
+    "gender": "Female",
+    "height": 67
+  },
+  "owners": [
+    {
+      "name": "BeetrootBot",
+      "url": "https://toyhou.se/BeetrootBot"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "This is how my typing style would look like in a pesterlog\\.",
+        "Therin is howeth mine typyng forme wouldst\nlooke upon a pesterlogue."
+      ],
+      [
+        "This is also a great place to put online information \\(like my username\\) into!",
+        "Therin is too a most wondrous lodging\nto putteth online inf'rmation (like\nmine own us'rname) into!"
+      ],
+      [
+        "Insanity\\?\\? Insane\\? What! No way\\. I can't believe it\\.",
+        "Insanity?? Madness? What! Nay. I shan't\nbelieveth 't."
+      ],
+      [
+        "The quick brown fox jumped over the lazy dog\\.",
+        "The quick browne fox did jump ov'r the dis-\ntemperate dog."
+      ],
+      [
+        "My girl wove six dozen plaid jackets before she quit\\.",
+        "Mine own lady did weave six dozen plaid jackets bef're she did quite"
+      ],
+      [
+        "Sphinx of black quartz, judge my vow\\.",
+        "Sfinx of dark quartz, judgeth mine own vowe."
+      ]
+    ],
+    "functions": []
+  },
+  "quirksQuiet": {
+    "regexes": [],
+    "functions": []
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "yes",
+    "ship": "yes",
+    "fanfiction": "yes"
+  },
+  "preferences": {
+    "loves": [],
+    "likes": [
+      "Acting",
+      "Theatre",
+      "History",
+      "Entertaining folk"
+    ],
+    "neutral": [],
+    "dislikes": [
+      "The Empire",
+      "Restrictions",
+      "Not being taken seriously"
+    ],
+    "hates": []
+  },
+  "facts": [
+    "Almost obsessively informed about Old-Alternian theatre and entertainment.",
+    "Knows almost all plays written in þe olde era by heart.",
+    "Will drop practically everything to speak of said plays.",
+    "Archan is derived from the word \"archetype\", whereas Scurra is simply latin for jester. Combined, his name means \"Jester Archetype\" which is prevelant in both their role as comic relief, and also their entire aesthetic and job."
+  ],
+  "colors": [
+    "#440A7F",
+    "#151515",
+    "#F8E13C",
+    "#FFFFFF",
+    "#C4C4C4",
+    "#898989",
+    "#FF4200",
+    "#FF9000",
+    "#FFB929",
+    "#99004D"
+  ]
+}

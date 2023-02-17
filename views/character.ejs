@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%- main.identity.name %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/mspa.css" />
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="TrollCall -- <%- main.identity.name.toUpperCase() %>">
+    <meta property="og:url" content="/TrollCall/char/<%- char %>">
+    <meta property="og:image" content="/TrollCall/characters/<%- char %>/image.png">
+    <meta property="og:description" content="<%- about[0] %> [read more...]">
+    <meta property="profile:first_name" content="<%- main.identity.name.split(" ")[0].toUpperCase() %>">
+    <meta property="profile:last_name" content="<%- main.identity.name.split(" ")[1].toUpperCase() %>">
+    <meta property="profile:username" content="<%- main.identity.username %> [<%- main.identity.usernameShort %>]">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
+  </head>
+  <body>
+    <box horizontal nopad align-start justify-start>
+      <box nopad strictparent>
+        <box outline parent>
+          <text large><%- main.identity.name %></text>
+          <a href="/TrollCall/">&lt;== Back To List</a>
+          <text>(pronounced like <text frame code><%- main.identity.pronunciation %></text>)</text>
+          <text>Also known as <text frame code><%- main.identity.username %> [<%- main.identity.usernameShort %>]</text> online.</text>
+          <box>
+            <% about.forEach(function(user){ %>
+              <text><%- user %></text>
+            <% }); %>
+          </box>
+          <box horizontal justify-around>
+            <text code><%- Math.round((main.identity.age * 2.1666666666666665) * 10) / 10 %> years (<%- main.identity.age %> sweeps)</text>
+            <text code><%- main.identity.sign.extended %> (<%- main.identity.sign.caste %> caste)</text>
+            <text code><%- main.identity.species %></text>
+            <text code>
+              <%- main.identity.pronouns.map(x => x.join("/")).join(", ") %>
+            </text>
+            <text code><%- main.identity.gender %></text>
+            <text code><%- Math.floor(main.identity.height / 12) %>'<%- Math.floor(main.identity.height % 12) %>" (<%- Math.round((main.identity.height / 39.37) * 10) / 10 %>m)</text>
+          </box>
+          <text big>Owner<%- main.owners.length > 1 ? "s" : "" %></text>
+          <box frame align-left important>
+            <% main.owners.forEach(function(owner){ %>
+              <a href="<%- owner.url %>" code><%- owner.name %></a>
+            <% }); %>
+          </box>
+        </box>
+        <box outline parent align-start span>
+          <text big>Colors</text>
+          <box id="colorStuff" nopad horizontal justify-around align-stretch>
+          </box>
+          <box nopad span horizontal align-stretch justify-center>
+            <slot><slotObject style="background-color: rgb(<%- zodiac.main %>)"></slotObject></slot>
+            <slot><slotObject style="background-color: rgb(<%- zodiac.text %>)"></slotObject></slot>
+          </box>
+          <box nopad span horizontal align-stretch justify-center>
+            <% main.colors.forEach(function(color){ %>
+              <slot><slotObject style="background-color: <%- color %>"></slotObject></slot>
+            <% }); %>
+          </box>
+        </box>
+      </box>
+      <box parent nopad important>
+        <img src="/TrollCall/characters/<%- char %>/image.png"/>
+      </box>
+    </box>
+    <box nopad align-start justify-start>
+      <box horizontal nopad align-stretch>
+        <box outline parent span align-start justify-start>
+          <text big>Policies</text>
+          <box align-center frame code span>
+            <box nopad nowrap horizontal vcontent>
+              <span class="material-symbols-outlined" title="<%- main.policies.art %>"><%- policies[main.policies.art] %></span>
+              <text align-left>Making art of this character.</text>
+            </box>
+            <box nopad nowrap horizontal vcontent>
+              <span class="material-symbols-outlined" title="<%- main.policies.artOthers %>"><%- policies[main.policies.artOthers] %></span>
+              <text align-left>Making art of this character with other characters.</text>
+            </box>
+            <box nopad nowrap horizontal vcontent>
+              <span class="material-symbols-outlined" title="<%- main.policies.kin %>"><%- policies[main.policies.kin] %></span>
+              <text align-left>Kinning this character.</text>
+            </box>
+            <box nopad nowrap horizontal vcontent>
+              <span class="material-symbols-outlined" title="<%- main.policies.ship %>"><%- policies[main.policies.ship] %></span>
+              <text align-left>Shipping this character with others.</text>
+            </box>
+            <box nopad nowrap horizontal vcontent>
+              <span class="material-symbols-outlined" title="<%- main.policies.fanfiction %>"><%- policies[main.policies.fanfiction] %></span>
+              <text align-left>Creating fanfiction of this character.</text>
+            </box>
+          </box>
+        </box>
+        <box span outline parent align-start justify-start>
+          <text big>Likes/Dislikes</text>
+          <box span align-center frame code>
+            <% main.preferences.loves.forEach(function(text){ %>
+              <box nopad nowrap horizontal vcontent>
+                <span class="material-symbols-outlined" title="Loves">favorite</span>
+                <text align-left><%- text %></text>
+              </box>
+            <% }); %>
+            <% main.preferences.likes.forEach(function(text){ %>
+              <box nopad nowrap horizontal vcontent>
+                <span class="material-symbols-outlined" title="Likes">thumb_up</span>
+                <text align-left><%- text %></text>
+              </box>
+            <% }); %>
+            <% main.preferences.neutral.forEach(function(text){ %>
+              <box nopad nowrap horizontal vcontent>
+                <span class="material-symbols-outlined" title="Neutral">thumbs_up_down</span>
+                <text align-left><%- text %></text>
+              </box>
+            <% }); %>
+            <% main.preferences.dislikes.forEach(function(text){ %>
+              <box nopad nowrap horizontal vcontent>
+                <span class="material-symbols-outlined" title="Dislikes">thumb_down</span>
+                <text align-left><%- text %></text>
+              </box>
+            <% }); %>
+            <% main.preferences.hates.forEach(function(text){ %>
+              <box nopad nowrap horizontal vcontent>
+                <span class="material-symbols-outlined" title="Hates">heart_broken</span>
+                <text align-left><%- text %></text>
+              </box>
+            <% }); %>
+          </box>
+        </box>
+        <box span outline parent align-start justify-start>
+          <text big>Fun Facts</text>
+          <box span align-left frame code justify-around>
+            <% main.facts.forEach(function(text){ %>
+              <text align-left><%- text %></text>
+            <% }); %>
+          </box>
+        </box>
+      </box>
+      <box horizontal nopad parent>
+        <box outline parent align-start span>
+          <text big>Chat Program</text>
+          <pesterlog>
+            <dialogue><span style="color: rgb(<%- zodiac.text %>)"><%- main.identity.username %> [<%- main.identity.usernameShort %>]</span> is trolling you.</dialogue>
+            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("The quick brown fox jumped over the lazy dog.", false) %></dialogue>
+            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("My girl wove six dozen plaid jackets before she quit.", false) %></dialogue>
+            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("Sphinx of black quartz, judge my vow.", false) %></dialogue>
+            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("Wait. Shh...", true) %></dialogue>
+            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("The quick brown fox jumped over the lazy dog.", true) %></dialogue>
+            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("My girl wove six dozen plaid jackets before she quit.", true) %></dialogue>
+            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("Sphinx of black quartz, judge my vow.", true) %></dialogue>
+          </pesterlog>
+          <details>
+            <summary>Show source text</summary>
+            <pesterlog>
+              <dialogue>The quick brown fox jumped over the lazy dog.</dialogue>
+              <dialogue>My girl wove six dozen plaid jackets before she quit.</dialogue>
+              <dialogue>Sphinx of black quartz, judge my vow.</dialogue>
+              <dialogue>Wait. Shh...</dialogue>
+              <dialogue>The quick brown fox jumped over the lazy dog.</dialogue>
+              <dialogue>My girl wove six dozen plaid jackets before she quit.</dialogue>
+              <dialogue>Sphinx of black quartz, judge my vow.</dialogue>
+            </pesterlog>
+          </details>
+        </box>
+        <!-- <box outline align-start>
+          <text big>Inventory</text>
+          <box horizontal justify-around align-stretch>
+            <text>Name: <text frame code>Air</text></text>
+            <text>ID: <text frame code>minecraft:air</text></text>
+          </box>
+          <box span nopad>
+            <box nopad horizontal nowrap align-center justify-center>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+            </box>
+            <box nopad horizontal nowrap align-center justify-center>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+            </box>
+            <box nopad horizontal nowrap align-center justify-center>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+            </box>
+            <spacer noshow></spacer>
+            <box nopad horizontal nowrap align-center justify-center>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+              <slot></slot>
+            </box>
+          </box>
+        </box> -->
+      </box>
+    </box>
+    <script src="/TrollCall/assets/scripts/string.js"></script>
+    <script type="module">
+import * as color from "/TrollCall/assets/scripts/color.js";
+color.themeColor([<%- zodiac.main %>], "pri");
+color.themeColor(color.negate([<%- zodiac.main %>]), "sec");
+    </script>
+    <script type="module" src="/TrollCall/assets/scripts/hover.js"></script>
+  </body>
+</html>

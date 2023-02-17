@@ -1,0 +1,94 @@
+{
+  "identity": {
+    "name": "Keelez Bunbat",
+    "pronunciation": "key-lehz boone-baht",
+    "username": "obfuscatedProcesses",
+    "age": 8,
+    "sign": {
+      "extended": "Virsces",
+      "caste": "Jade"
+    },
+    "species": "Troll",
+    "pronouns": [
+      ["she", "her"]
+    ],
+    "gender": "Female",
+    "height": "67"
+  },
+  "owners": [
+    {
+      "name": "MeowcaTheoRange",
+      "url": "https://meowcatheorange.github.io/"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "^",
+        "<i>"
+      ],
+      [
+        "$",
+        "</i>"
+      ]
+    ]
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "^",
+        "<i>"
+      ],
+      [
+        "$",
+        "</i>"
+      ]
+    ],
+    "functions": [
+      [
+        "toLowerCase"
+      ]
+    ]
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "no",
+    "ship": "no",
+    "fanfiction": "ask"
+  },
+  "preferences": {
+    "loves": [
+      "Timesheet calendars",
+      "Nixgrub"
+    ],
+    "likes": [],
+    "neutral": [
+      "Drawers"
+    ],
+    "dislikes": [],
+    "hates": [
+      "Grubshell packaging"
+    ]
+  },
+  "facts": [
+    "Thinks KDE is cool",
+    "Too privacy-concerned for her own good",
+    "Fucking Grubble",
+    "Not very good posture",
+    "Obsessively organizes her files into small folders",
+    "Module lover"
+  ],
+  "colors": [
+    "#1B1B1B",
+    "#ffb838",
+    "#ff9020",
+    "#ff4820",
+    "#c0c0c0",
+    "#ffffff",
+    "#404040",
+    "#e8e8e8",
+    "#c8c8c8",
+    "#188048"
+  ]
+}

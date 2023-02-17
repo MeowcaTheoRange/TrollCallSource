@@ -1,0 +1,147 @@
+{
+  "identity": {
+    "name": "Thaero Rhange",
+    "username": "untidyFunctions",
+    "pronunciation": "thay-row ray-ng",
+    "age": 7.8,
+    "sign": {
+      "extended": "Lepio",
+      "caste": "Olive"
+    },
+    "species": "Troll",
+    "pronouns": [
+      [
+        "he",
+        "him"
+      ]
+    ],
+    "gender": "Male",
+    "height": 69
+  },
+  "owners": [
+    {
+      "name": "MeowcaTheoRange",
+      "url": "https://meowcatheorange.github.io/"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "'",
+        ""
+      ],
+      [
+        "\\.\\.\\.[a-zA-Z]+",
+        " [$&]"
+      ],
+      [
+        "\\.\\.\\.( |$)",
+        "(...);$1"
+      ],
+      [
+        "--",
+        "--;"
+      ],
+      [
+        "\\.( |$)",
+        "();$1"
+      ],
+      [
+        ",( |$)",
+        "();$1"
+      ],
+      [
+        "\\?\\?",
+        "(??);"
+      ],
+      [
+        "\\?( |$)",
+        "(? :);$1"
+      ],
+      [
+        "( |^)([a-zA-Z]+)!",
+        "$1!$2(!);"
+      ]
+    ]
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "'",
+        ""
+      ],
+      [
+        "\\.\\.\\.[a-zA-Z]+",
+        " [$&]"
+      ],
+      [
+        "\\.\\.\\.( |$)",
+        "(...);$1"
+      ],
+      [
+        "--",
+        "--;"
+      ],
+      [
+        "\\.( |$)",
+        "();$1"
+      ],
+      [
+        ",( |$)",
+        "();$1"
+      ],
+      [
+        "\\?\\?",
+        "(??);"
+      ],
+      [
+        "\\?( |$)",
+        "(? :);$1"
+      ],
+      [
+        "( |^)([a-zA-Z]+)!",
+        "$1!$2(!);"
+      ]
+    ]
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "no",
+    "ship": "ask",
+    "fanfiction": "ask"
+  },
+  "preferences": {
+    "likes": [
+      "GrKi (Troll GRiZ)"
+    ],
+    "loves": [
+      "Sleeping"
+    ],
+    "neutral": [
+      "Gruber"
+    ],
+    "dislikes": [
+      "Kismetic Dark Seasons (Troll Friday Night Funkin')"
+    ],
+    "hates": []
+  },
+  "facts": [
+    "Coder boy",
+    "Homosexual",
+    "Tired 24/7"
+  ],
+  "colors": [
+    "#151515",
+    "#ffb929",
+    "#ff9000",
+    "#ff4200",
+    "#509000",
+    "#c4c4c4",
+    "#ffffff",
+    "#151515",
+    "#71a020",
+    "#313131",
+    "#181818"
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "identity": {
+    "name": "Thaobi Rhange",
+    "username": "untidyArtistry",
+    "pronunciation": "thay-oh-bee ray-ng",
+    "age": 6.5,
+    "sign": {
+      "extended": "Armino",
+      "caste": "Rust"
+    },
+    "species": "Troll-Human",
+    "pronouns": [
+      [
+        "they",
+        "them"
+      ],
+      [
+        "he",
+        "him"
+      ]
+    ],
+    "gender": "Male",
+    "height": 64
+  },
+  "owners": [
+    {
+      "name": "MeowcaTheoRange",
+      "url": "https://meowcatheorange.github.io/"
+    },
+    {
+      "name": "ObsivX",
+      "url": "https://twitter.com/obsiv_x"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "'",
+        ""
+      ],
+      [
+        "\\.",
+        "..."
+      ],
+      [
+        ",",
+        ",,,"
+      ],
+      [
+        "\\?",
+        "?[exc]"
+      ],
+      [
+        "!",
+        "!?"
+      ],
+      [
+        "\\[exc\\]",
+        "!"
+      ],
+      [
+        "^",
+        "🖌️ "
+      ],
+      [
+        "$",
+        " 🖌️"
+      ]
+    ],
+    "functions": [
+      [
+        "toAllUpperCase"
+      ]
+    ]
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "'",
+        ""
+      ],
+      [
+        ",",
+        "."
+      ],
+      [
+        "\\?",
+        "."
+      ],
+      [
+        "!",
+        "."
+      ],
+      [
+        "\\[exc\\]",
+        "."
+      ],
+      [
+        "\\.+",
+        "."
+      ],
+      [
+        "^",
+        "🖌️ "
+      ],
+      [
+        "$",
+        " 🖌️"
+      ]
+    ],
+    "functions": [
+      [
+        "toLowerCase"
+      ]
+    ]
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "no",
+    "ship": "ask",
+    "fanfiction": "ask"
+  },
+  "preferences": {
+    "loves": [
+      [
+        "Alfredo-ish grub sauce on flavor discs"
+      ]
+    ],
+    "likes": [],
+    "neutral": [],
+    "dislikes": [],
+    "hates": []
+  },
+  "facts": [
+    "Is his own separate being from Obi and Thaero",
+    "Literally insane.",
+    "Forever running."
+  ],
+  "colors": [
+    "#d7d7d7",
+    "#579601",
+    "#ffb92b",
+    "#ff9000",
+    "#ff4100",
+    "#c4c4c4",
+    "#000000",
+    "#ffbb20",
+    "#efefef",
+    "#a80000",
+    "#313131"
+  ]
+}

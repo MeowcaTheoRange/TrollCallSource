@@ -1,0 +1,158 @@
+{
+  "identity": {
+    "name": "Syreta Roseus",
+    "pronunciation": "sigh-re-tuh row-see-us",
+    "username": "artsyRemedy",
+    "age": 7.3,
+    "sign": {
+      "extended": "Taursci",
+      "caste": "Bronze"
+    },
+    "species": "Troll",
+    "pronouns": [
+      [
+        "she",
+        "her"
+      ]
+    ],
+    "gender": "Female",
+    "height": 61
+  },
+  "owners": [
+    {
+      "name": "pink",
+      "url": "https://twitter.com/pinko_art"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "'",
+        ""
+      ],
+      [
+        "( |^)i( |$)",
+        "$1I$2"
+      ],
+      [
+        "\\.|\\?|!|,",
+        ""
+      ]
+    ],
+    "functions": [
+      [
+        "toLowerCase"
+      ],
+      [
+        "randomReplace",
+        [
+          0.5,
+          "$",
+          " [EMOTICON]"
+        ]
+      ],
+      [
+        "randomReplace",
+        [
+          0.1,
+          "\\[EMOTICON\\]",
+          ":P"
+        ]
+      ],
+      [
+        "randomReplace",
+        [
+          0.2,
+          "\\[EMOTICON\\]",
+          ":>"
+        ]
+      ],
+      [
+        "randomReplace",
+        [
+          0.3,
+          "\\[EMOTICON\\]",
+          ":]"
+        ]
+      ],
+      [
+        "randomReplace",
+        [
+          0.9,
+          "\\[EMOTICON\\]",
+          ":)"
+        ]
+      ],
+      [
+        "randomReplace",
+        [
+          1,
+          " \\[EMOTICON\\]",
+          ""
+        ]
+      ]
+    ]
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "'",
+        ""
+      ],
+      [
+        "^",
+        "("
+      ],
+      [
+        "$",
+        ")"
+      ],
+      [
+        "( |^)i( |$)",
+        "$1I$2"
+      ]
+    ],
+    "functions": [
+      [
+        "toLowerCase"
+      ]
+    ]
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "no",
+    "ship": "ask",
+    "fanfiction": "ask"
+  },
+  "preferences": {
+    "loves": [
+      "Drawing"
+    ],
+    "likes": [],
+    "neutral": [],
+    "dislikes": [],
+    "hates": [
+      "Pizza"
+    ]
+  },
+  "facts": [
+    "Dislikes her glasses",
+    "Clueless 24/7",
+    "The Scrimbloid"
+  ],
+  "colors": [
+    "#ffb929",
+    "#ff9000",
+    "#ff4200",
+    "#151515",
+    "#c4c4c4",
+    "#404040",
+    "#a05008",
+    "#efefef",
+    "#313131",
+    "#181818",
+    "#010101",
+    "#f6f6f6"
+  ]
+}

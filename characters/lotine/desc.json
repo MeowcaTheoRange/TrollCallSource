@@ -1,0 +1,88 @@
+{
+  "identity": {
+    "name": "Lotine Restej",
+    "pronunciation": "low-teen rest-edge",
+    "username": "carnivalAxe",
+    "age": 8,
+    "sign": {
+      "extended": "Capricen",
+      "caste": "Purple"
+    },
+    "species": "Troll",
+    "pronouns": [
+      [
+        "he",
+        "him"
+      ]
+    ],
+    "gender": "Male",
+    "height": 81
+  },
+  "owners": [
+    {
+      "name": "Earl Grey",
+      "url": "https://instagram.com/steamjunk23?igshid=YmMyMTA2M2Y="
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "oo",
+        "o"
+      ],
+      [
+        "o",
+        "oSo"
+      ]
+    ],
+    "functions": []
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "oo",
+        "o"
+      ],
+      [
+        "o",
+        "oso"
+      ]
+    ],
+    "functions": []
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "ask",
+    "ship": "ask",
+    "fanfiction": "yes"
+  },
+  "preferences": {
+    "loves": [],
+    "likes": [
+      "Jokes",
+      "Apples",
+      "Honking",
+      "His moirail",
+      "Making others happy"
+    ],
+    "neutral": [],
+    "dislikes": [],
+    "hates": []
+  },
+  "facts": [
+    "Lotine is short for guillotine",
+    "Gentle Giant",
+    "Prefers traditional \"clown methods\""
+  ],
+  "colors": [
+    "#efe8ea",
+    "#000000",
+    "#e4c5f3",
+    "#520089",
+    "#3f3e3c",
+    "#a60803",
+    "#f6a023",
+    "#f8c51e"
+  ]
+}

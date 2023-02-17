@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TrollCall</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/mspa.css" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TrollCall -- Pesterlog &quot;<%- name %>&quot;">
+    <meta property="og:url" content="/TrollCall/pester/<%- name %>">
+    <meta property="og:description" content="<%- before %>">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
+  </head>
+  <body>
+    <box span align-center justify-start>
+      <box nopad span noimportant></box>
+      <box align-stretch nopad>
+        <box outline span noimportant align-start>
+          <text large>Pesterlog - <%- name %></text>
+          <text><%- before %></text>
+          <a href="/TrollCall/">&lt;== Back To List</a>
+          <pesterlog>
+            <dialogue>
+              <span style="color: rgb(<%- zodiac[chars[charsList[0]].caste].text %>)"><%- chars[charsList[0]].name %> [<%- chars[charsList[0]].nameshort %>]</span> 
+              is trolling 
+              <span style="color: rgb(<%- zodiac[chars[charsList[1]].caste].text %>)"><%- chars[charsList[1]].name %> [<%- chars[charsList[1]].nameshort %>]</span>
+            </dialogue>
+            
+            <% list.forEach(function(dialogue){ %>
+            <dialogue style="color: rgb(<%- zodiac[chars[dialogue.character].caste].text %>)"><%- chars[dialogue.character].nameshort %>: <%- quirkify(dialogue.character, dialogue.text, dialogue.whispering) %></dialogue>
+            <% }); %>
+          </pesterlog>
+        </box>
+      </box>
+    </box>
+    <script type="module">
+      import * as color from "/TrollCall/assets/scripts/color.js";
+      color.themeColor("#ffffff", "pri");
+      color.themeColor("#404040", "sec");
+    </script>
+  </body>
+</html>
