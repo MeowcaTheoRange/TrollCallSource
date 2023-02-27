@@ -1,0 +1,87 @@
+{
+  "identity": {
+    "name": "Madhie Saongz",
+    "pronunciation": "mad-ee say-ong-ss",
+    "username": "saltiestBlueberry",
+    "age": 7,
+    "sign": {
+      "extended": "Virpio",
+      "caste": "Jade"
+    },
+    "species": "Troll",
+    "pronouns": [
+      [
+        "she",
+        "her"
+      ]
+    ],
+    "gender": "Female",
+    "height": 62
+  },
+  "owners": [
+    {
+      "name": "Madisongs",
+      "url": "https://madisongs.carrd.co/"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "^",
+        "~【"
+      ],
+      [
+        "^",
+        "】~"
+      ]
+    ],
+    "functions": []
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "^",
+        "~【"
+      ],
+      [
+        "^",
+        "】~"
+      ]
+    ],
+    "functions": []
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "yes",
+    "ship": "yes",
+    "fanfiction": "yes"
+  },
+  "preferences": {
+    "loves": [],
+    "likes": [
+      "Making music",
+      "Collecting trinkets"
+    ],
+    "neutral": [],
+    "dislikes": [
+      "The salt mines"
+    ],
+    "hates": []
+  },
+  "facts": [
+    "Has many blogs"
+  ],
+  "colors": [
+    "#212121",
+    "#feb741",
+    "#fd902e",
+    "#fd4e2d",
+    "#bfbfbf",
+    "#feb741",
+    "#1a8248",
+    "#444444",
+    "#373737",
+    "#232323"
+  ]
+}

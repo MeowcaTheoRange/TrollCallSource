@@ -1,0 +1,102 @@
+{
+  "identity": {
+    "name": "Tailyr Voibrd",
+    "pronunciation": "tay-ler voy-bird",
+    "username": "watchfulVenace",
+    "age": 7,
+    "sign": {
+      "extended": "Virnius",
+      "caste": "Jade"
+    },
+    "species": "Troll",
+    "pronouns": [
+      [
+        "they",
+        "them"
+      ]
+    ],
+    "gender": "Non-Binary",
+    "height": 63
+  },
+  "owners": [
+    {
+      "name": "JayzzzTV",
+      "url": "https://twitter.com/JayzzzTv/"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "o",
+        "[]"
+      ],
+      [
+        "u",
+        "y"
+      ],
+      [
+        "a",
+        "@"
+      ]
+    ],
+    "functions": []
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "o",
+        "[]"
+      ],
+      [
+        "u",
+        "v"
+      ],
+      [
+        "a",
+        "#"
+      ]
+    ],
+    "functions": []
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "no",
+    "ship": "ask",
+    "fanfiction": "ask"
+  },
+  "preferences": {
+    "loves": [],
+    "likes": [
+      "Meowbeasts",
+      "Caramel",
+      "Point & click adventure games",
+      "Drawing"
+    ],
+    "neutral": [],
+    "dislikes": [
+      "Dull colors",
+      "Wooden spoons"
+    ],
+    "hates": []
+  },
+  "facts": [
+    "Autism!!!",
+    "Likes to collect cool looking cans",
+    "Has trouble remembering to do routine things sometimes"
+  ],
+  "colors": [
+    "#ffb929",
+    "#222222",
+    "#fd9001",
+    "#ff4400",
+    "#c4c4c4",
+    "#9c9c9c",
+    "#ffba29",
+    "#ffffff",
+    "#5c5c5c",
+    "#078446",
+    "#3d335a",
+    "#2b243f"
+  ]
+}

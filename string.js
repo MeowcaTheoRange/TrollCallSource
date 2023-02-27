@@ -8,6 +8,13 @@ String.prototype.toAllUpperCase = function () {
   return this.split(" ").map(x => x.toFirstUpperCase()).join(" ");
 }
 
+String.prototype.toFirstLastUpperCase = function () {
+  var x = this.split(" ")
+  x[0] = x[0].toFirstUpperCase();
+  x[x.length - 1] = x[x.length - 1].toFirstUpperCase();
+  return x.join(" ");
+}
+
 String.prototype.toFirstLowerCase = function () {
   var arr = this.toUpperCase().split("");
   arr.unshift(arr.shift().toLowerCase());

@@ -1,0 +1,85 @@
+{
+  "identity": {
+    "name": "Capaca Quincy",
+    "pronunciation": "Cap-ah-kah quinn-see",
+    "username": "chromaticTechnosphere",
+    "age": 7,
+    "sign": {
+      "extended": "Aquasces",
+      "caste": "Violet"
+    },
+    "species": "Troll",
+    "pronouns": [
+      [
+        "she",
+        "her"
+      ]
+    ],
+    "gender": "Female",
+    "height": 66
+  },
+  "owners": [
+    {
+      "name": "Earl Grey",
+      "url": "https://instagram.com/steamjunk23"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "o",
+        "~o~"
+      ]
+    ],
+    "functions": []
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "o",
+        "-o-"
+      ]
+    ],
+    "functions": []
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "ask",
+    "ship": "ask",
+    "fanfiction": "yes"
+  },
+  "preferences": {
+    "loves": [
+      "Technology",
+      "Teslapunk"
+    ],
+    "likes": [
+      "The water",
+      "The beach",
+      "Making deals with pirates"
+    ],
+    "neutral": [],
+    "dislikes": [
+      "Socializing for very long"
+    ],
+    "hates": []
+  },
+  "facts": [
+    "Hair floats towards a little orb she got from her ancestor",
+    "Made her own gun",
+    "Is mildly upset at any given moment",
+    "Has to keep her hair up or else it will get in her face"
+  ],
+  "colors": [
+    "#190719",
+    "#d1b7cc",
+    "#f6c316",
+    "#f19b1a",
+    "#b3130b",
+    "#c0c0c0",
+    "#741780",
+    "#f19b1a",
+    "#f2e652"
+  ]
+}

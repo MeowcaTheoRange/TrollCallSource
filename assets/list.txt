@@ -5,3 +5,6 @@ syreta | Syreta Roseus | Pink-o Arts | Bronze
 xyuaad | Xyuaad Kleufi | Varcan | Gold
 archan | Archan Scurra | BeetrootBot | Purple
 lotine | Lotine Restej | Earl Grey | Purple
+capaca | Capaca Quincy | Earl Grey | Violet
+reswob | Reswob Soopak | lavenderSiren | Blue
+vryano | Vryano Sitnam | Varcan | Rust

@@ -1,0 +1,80 @@
+{
+  "identity": {
+    "name": "Reswob Soopak",
+    "pronunciation": "res-wob sou-pack",
+    "username": "arsonTortoise",
+    "age": 9,
+    "sign": {
+      "extended": "Scoriborn",
+      "caste": "Blue"
+    },
+    "species": "Troll",
+    "pronouns": [
+      [
+        "he",
+        "him"
+      ]
+    ],
+    "gender": "Male",
+    "height": 84
+  },
+  "owners": [
+    {
+      "name": "lavenderSiren",
+      "url": "https://shinyjiggly.tumblr.com"
+    }
+  ],
+  "quirks": {
+    "regexes": [],
+    "functions": [
+      ["toUpperCase"]
+    ]
+  },
+  "quirksQuiet": {
+    "regexes": [],
+    "functions": [
+      ["toLowerCase"]
+    ]
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "yes",
+    "ship": "yes",
+    "fanfiction": "yes"
+  },
+  "preferences": {
+    "loves": [],
+    "likes": [
+      "Spicy things",
+      "Fire",
+      "Heavy weaponry",
+      "Bombs"
+    ],
+    "neutral": [],
+    "dislikes": [],
+    "hates": [
+      "Troll Mario",
+      "Slow traffic",
+      "Following rules",
+      "Boring situations"
+    ]
+  },
+  "facts": [
+    "Always wearing a plastic bowser mask",
+    "Can use pyrokinesis to launch fireballs",
+    "Enjoys stealing cars",
+    "Lusus is some kinda little old turtle that wears a wizard hat"
+  ],
+  "colors": [
+    "#212121",
+    "#feb741",
+    "#fd902e",
+    "#fd4e2d",
+    "#afafaf",
+    "#f9b700",
+    "#006899",
+    "#838383",
+    "#1e1d1d"
+  ]
+}

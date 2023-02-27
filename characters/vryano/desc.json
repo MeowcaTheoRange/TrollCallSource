@@ -1,0 +1,117 @@
+{
+  "identity": {
+    "name": "Vryano Sitnam",
+    "pronunciation": "vree-yanno seat-nam",
+    "username": "visionaryMonsters",
+    "age": 7,
+    "sign": {
+      "extended": "Arra",
+      "caste": "Rust"
+    },
+    "species": "Troll",
+    "pronouns": [
+      [
+        "he",
+        "him"
+      ]
+    ],
+    "gender": "Male",
+    "height": 68
+  },
+  "owners": [
+    {
+      "name": "Varcan",
+      "url": "https://twitter.com/VarcanOctave/"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "z",
+        "zz"
+      ],
+      [
+        "\\.",
+        "!"
+      ],
+      [
+        "\\?",
+        "!"
+      ]
+    ],
+    "functions": [
+      ["toFirstLastUpperCase"]
+    ]
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "z",
+        "zz"
+      ],
+      [
+        "\\.",
+        ".."
+      ],
+      [
+        "\\!",
+        ".."
+      ],
+      [
+        "\\?",
+        ".."
+      ]
+    ],
+    "functions": [
+      ["toLowerCase"]
+    ]
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "yes",
+    "ship": "yes",
+    "fanfiction": "ask"
+  },
+  "preferences": {
+    "loves": [
+      "Xyuaad",
+      "His lusus",
+      "His trusty farming tools"
+    ],
+    "likes": [
+      "Grubroot",
+      "Baking",
+      "Caretaking",
+      "Drawing"
+    ],
+    "neutral": [],
+    "dislikes": [
+      "Fish",
+      "The cold"
+    ],
+    "hates": [
+      "Growing grub-cobs"
+    ]
+  },
+  "facts": [
+    "Hopes to one day be able to meet Xyuaad",
+    "Makes a lot of stews with his crops",
+    "Has a section dedicated to growing spices"
+  ],
+  "colors": [
+    "#222222",
+    "#ffd800",
+    "#ffaa00",
+    "#ff6600",
+    "#c4c4c4",
+    "#ffba29",
+    "#5d5d5d",
+    "#ffffff",
+    "#969696",
+    "#cacaca",
+    "#323232",
+    "#1b1b1b",
+    "#b21002"
+  ]
+}
