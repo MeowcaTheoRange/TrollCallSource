@@ -73,6 +73,60 @@ body {
     }
   }
 
+  & input, & select, & textarea {
+    border: none;
+    width: 20ch;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: inherit;
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+
+    &[bg] {
+      --this-color0: var(--sec0);
+      --this-color10: var(--sec10);
+      --this-color20: var(--sec20);
+      --this-color30: var(--sec30);
+      --this-color40: var(--sec40);
+      --this-color50: var(--sec50);
+      --this-color60: var(--sec60);
+      --this-color70: var(--sec70);
+      --this-color80: var(--sec80);
+      --this-color90: var(--sec90);
+      --this-color100: var(--sec100);
+      font-family: 'Inconsolata', sans-serif;
+      background-color: var(--this-color20);
+      color: var(--this-color80);
+      padding: 4px;
+      border-radius: 8px;
+    }
+
+    &[type=number] {
+      width: calc(2ch + 8px);
+      -moz-appearance:textfield;
+
+      &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+
+    &[titleBox] {
+      font-size: 24px;
+      font-family: 'Krona One', sans-serif;
+      text-transform: uppercase;
+    }
+  }
+
+  & textarea {
+    width: 80ch;
+    height: 40ch;
+    overflow:auto;
+    resize: horizontal;
+  }
+
   & box {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/mspa.css" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TrollCall -- Submit">
+    <meta property="og:url" content="/TrollCall/submit/">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
+  </head>
+  <body>
+    <box outline>
+      <input type="text" titleBox bg />
+      <text>(pronounced like <input type="text" bg />)</text>
+      <text>Also known as <text frame code><input type="text" name="user" id="username" /> <input type="text" readonly id="username2" /></text> online.</text>
+      <textarea bg></textarea>
+      <text><input type="number" name="years" id="years" bg /> years (<input type="number" name="sweeps" id="sweeps" bg /> sweeps)</text>
+      <text><input type="text" name="extended" bg /> (<select bg name="zodiac" id="zod"></select> caste)</text>
+      <input type="text" name="species" bg value="Troll" />
+      
+    </box>
+    <script type="module">
+      import * as color from "/TrollCall/assets/scripts/color.js";
+      color.themeColor("#ffffff", "pri");
+      color.themeColor("#404040", "sec");
+      var zodiac = <%- zodiac %>;
+      var select = document.querySelector("#zod");
+      var username = document.querySelector("#username");
+      var usernameShort = document.querySelector("#username2");
+      Object.keys(zodiac).forEach(z => select.innerHTML += `<option value="${z}">${z}</option>`);
+      select.onchange = () => {
+        color.themeColor(zodiac[select.value].main, "pri");
+        color.themeColor(color.negate(zodiac[select.value].main), "sec");
+      }; select.onchange();
+      usernameShort.onclick = () => {
+        username.focus();
+      };
+      username.onkeyup = () => {
+        usernameShort.value = `[${username.value.split(/(?=[A-Z])/).map(x => x[0]).join("").toUpperCase().slice(0, 2).padEnd(2, " ")}]`;
+        username.style.width = username.value.length + "ch";
+      }; username.onkeyup();
+      
+    </script>
+  </body>
+</html>
