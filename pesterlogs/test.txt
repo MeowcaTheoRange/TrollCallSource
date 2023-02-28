@@ -1,7 +1,5 @@
 keelez > thaobi
 ----
-description
-----
 keelez: What a wonderful day.
 thaobi: The FitnessGram PACER test is a multistage aerobic capacity test that progressively gets more difficult as it continues.
 keelez~: What?

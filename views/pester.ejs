@@ -12,7 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="TrollCall -- Pesterlog &quot;<%- name %>&quot;">
     <meta property="og:url" content="/TrollCall/pester/<%- name %>">
-    <meta property="og:description" content="<%- before %>">
+    <!-- <meta property="og:description" content="<%#- before %>"> -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
   </head>
   <body>
@@ -20,13 +20,12 @@
       <box nopad span noimportant></box>
       <box align-stretch nopad>
         <box outline span noimportant align-start>
-          <text large>Pesterlog - <%- name %></text>
-          <text><%- before %></text>
-          <a href="/TrollCall/">&lt;== Back To List</a>
+          <text large>Pesterlog - <%- name.replace(/_/gm, " ") %></text>
+          <!-- <text><%#- before %></text> -->
           <pesterlog>
             <dialogue>
               <span style="color: rgb(<%- zodiac[chars[charsList[0]].caste].text %>)"><%- chars[charsList[0]].name %> [<%- chars[charsList[0]].nameshort %>]</span> 
-              is trolling 
+              began trolling 
               <span style="color: rgb(<%- zodiac[chars[charsList[1]].caste].text %>)"><%- chars[charsList[1]].name %> [<%- chars[charsList[1]].nameshort %>]</span>
             </dialogue>
             

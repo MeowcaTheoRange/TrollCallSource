@@ -48,7 +48,7 @@ var getPester = (pester) => {
     };
   })
 
-  logSpl[2].split("\n").forEach(xlog => {
+  logSpl[1].split("\n").forEach(xlog => {
     var thing = xlog.split(": ");
 
     logJSON.push({
@@ -60,7 +60,6 @@ var getPester = (pester) => {
 
   return {
     "name": pester,
-    "before": logSpl[1],
     "zodiac": zodiacShit,
     "chars": charsQuirks,
     "charsList": chars,

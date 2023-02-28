@@ -24,7 +24,6 @@
       <box nopad strictparent>
         <box outline parent>
           <text large><%- main.identity.name %></text>
-          <a href="/TrollCall/">&lt;== Back To List</a>
           <text>(pronounced like <text frame code><%- main.identity.pronunciation %></text>)</text>
           <text>Also known as <text frame code><%- main.identity.username %> [<%- main.identity.usernameShort %>]</text> online.</text>
           <box>
@@ -219,6 +218,13 @@
             </box>
           </box>
         </box> -->
+      </box>
+      <box outline parent align-start span>
+        <text big>Links</text>
+        <box frame align-left important>
+          <a href="https://friendsim.com/TrollCall/char/<%- char %>" code>https://friendsim.com/TrollCall/char/<%- char %></a>
+          <a href="https://meowcatheorange.github.io/TrollCall/char/<%- char %>" code>https://meowcatheorange.github.io/TrollCall/char/<%- char %></a>
+        </box>
       </box>
     </box>
     <script src="/TrollCall/assets/scripts/string.js"></script>

@@ -31,64 +31,75 @@
           </box>
         </box>
         <box frame outline align-start noimportant>
-          <text large>Get your own!</text>
+          <text large>...Get your own space!</text>
           <box>
             <text>Want your own fantroll to have a cool refsheet? Simply take <a href="https://forms.gle/Gs4rccZpCt7KKmyx6">this form</a>!</text>
             <spacer noshow></spacer>
             <text>Already have a refsheet and want to update outdated information? DM me <a href="https://meowcatheorange.github.io/">on Discord</a>! (follow website link then click "Discord Friend Invite" icon)</text>
           </box>
+          <spacer></spacer>
+          <text large>...Join the Discord Server!</text>
+          <box>
+            <text>I have a Discord server now. It's pretty cool. I think.</text>
+            <text>I share it with another project one of my friends are making, so sorry for the clutter, haha</text>
+            <spacer noshow></spacer>
+            <text><a href="https://discord.gg/dxS3Nc6VXB">JOIN HERE</a></text>
+          </box>
         </box>
-        <box outline span>
-          <box align-start noimportant frame>
-              <text big>Contents</text>
-              <box parent important>
-                <box nopad horizontal>
-                  <text big><a href="#chars">Characters</a></text>
-                  <a href=<%- query.sort ? `"/TrollCall/">(Sort by user)` : `"/TrollCall/blood/">(Sort by caste)` %></a>
+        <box horizontal span nopad>
+          <box outline span important strictparent>
+            <!-- <box align-start noimportant frame>
+                <text big>Contents</text>
+                <box parent important>
+                  <box nopad horizontal>
+                    <text big><a href="#chars">Characters</a></text>
+
+                  </box>
+                  <spacer></spacer>
+                  <%# array.forEach(function(user){ %>
+                    <a href="#<%#- user[0] %>"><%#- user[0] %><%#- query.sort ? "" : (user[0].slice(-1) == "s" ? "' Characters" : "'s Characters") %></a>
+                    <box>
+                    <%# user[1].forEach(function(char){ %>
+                      <text>- <%#- char[1] %></text>
+                    <%# }); %>
+                    </box>
+                  <%# }); %>
+                  <text big><a href="#pesters">Pesterlogs</a></text>
+                  <spacer></spacer>
                 </box>
+            </box> -->
+              <box align-start parent nopad important>
+                <text large id="chars">Characters</text>
                 <spacer></spacer>
+                <a href=<%- query.sort ? `"/TrollCall/">(Sort by user)` : `"/TrollCall/blood/">(Sort by caste)` %></a>
+                <box span>
                 <% array.forEach(function(user){ %>
-                  <a href="#<%- user[0] %>"><%- user[0] %><%- query.sort ? "" : (user[0].slice(-1) == "s" ? "' Characters" : "'s Characters") %></a>
-                  <box>
-                  <% user[1].forEach(function(char){ %>
-                    <text>- <%- char[1] %></text>
-                  <% }); %>
+                  <text big id="<%- user[0] %>"><%- user[0] %><%- query.sort ? "" : (user[0].slice(-1) == "s" ? "' Characters" : "'s Characters") %></text>
+                  <!-- <spacer></spacer> -->
+                  <box horizontal align-start span justify-center vcontent>
+                    <% user[1].forEach(function(char){ %>
+                    <a href="/TrollCall/char/<%- char[0] %>" boxish style="<%- colors.themeColor(zodiac[char[3]].main, "this-color") %>">
+                      <box outline parent child pattern align-center>
+                        <text large span><%- char[1] %></text>
+                        <text span><%- query.sort ? char[2] : char[3] %></text>
+                        <img icon src="/TrollCall/characters/<%- char[0] %>/image.png"/>
+                      </box>
+                    </a>
+                    <% }); %>
                   </box>
                 <% }); %>
-                <text big><a href="#pesters">Pesterlogs</a></text>
-                <spacer></spacer>
+                </box>
               </box>
           </box>
-          <box horizontal span nopad>
-            <box align-start parent important>
-              <text large id="chars">Characters</text>
-              <spacer></spacer>
-              <box span>
-              <% array.forEach(function(user){ %>
-                <text big id="<%- user[0] %>"><%- user[0] %><%- query.sort ? "" : (user[0].slice(-1) == "s" ? "' Characters" : "'s Characters") %></text>
-                <!-- <spacer></spacer> -->
-                <box horizontal align-start span justify-start vcontent>
-                  <% user[1].forEach(function(char){ %>
-                  <a href="/TrollCall/char/<%- char[0] %>" boxish style="<%- colors.themeColor(zodiac[char[3]].main, "this-color") %>">
-                    <box outline pattern align-center class="imageHolder">
-                      <text large span><%- char[1] %></text>
-                      <text span><%- query.sort ? char[2] : char[3] %></text>
-                      <img icon src="/TrollCall/characters/<%- char[0] %>/image.png"/>
-                    </box>
-                  </a>
-                  <% }); %>
-                </box>
-              <% }); %>
-              </box>
-            </box>
-            <box align-start parent>
+          <box outline align-start parent span>
+            <box align-start nopad important span>
               <text large id="pesters">Pesterlogs</text>
               <spacer></spacer>
               <box span>
                 <% logs.forEach(function(log){ %>
                   <a href="/TrollCall/pester/<%- log[0] %>" boxish span>
                     <box outline frame pattern vcontent align-left span>
-                      <text big><%- log[0] %></text>
+                      <text big><%- log[0].replace(/_/gi, " ") %></text>
                       <text><%- new Date(log[2] * 1000).toLocaleString() %></text>
                       <spacer noshow></spacer>
                       <text><%- log[1] %></text>

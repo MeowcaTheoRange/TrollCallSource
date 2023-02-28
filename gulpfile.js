@@ -65,7 +65,7 @@ async function EJSPester(cb) {
       };
     })
 
-    logSpl[2].split("\n").forEach(xlog => {
+    logSpl[1].split("\n").forEach(xlog => {
       var thing = xlog.split(": ");
 
       logJSON.push({
@@ -78,7 +78,6 @@ async function EJSPester(cb) {
     return src("views/pester.ejs")
       .pipe(ejs({
         "name": pester,
-        "before": logSpl[1],
         "zodiac": zodiacShit,
         "chars": charsQuirks,
         "charsList": chars,

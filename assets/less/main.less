@@ -107,6 +107,14 @@ body {
     &[parent] {
       min-width: 300px;
     }
+
+    &[strictchild] {
+      max-width: 350px;
+    }
+
+    &[child] {
+      max-width: 300px;
+    }
     // & > box {
     //   min-width: 384px;
     // }
@@ -279,12 +287,12 @@ body {
   & a {
     &:any-link {
       font-weight: bold;
-      color: var(--this-color70);
+      color: var(--this-color90);
       text-decoration: underline;
     }
 
     &:visited {
-      color: var(--this-color90);
+      color: var(--this-color70);
     }
 
     &[boxish] {
@@ -324,7 +332,7 @@ body {
 
     &[icon] {
       width: 200px;
-      height: 300px;
+      height: 200px;
     }
   }
 
