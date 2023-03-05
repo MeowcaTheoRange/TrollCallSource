@@ -33,7 +33,7 @@ async function EJS(cb) {
           });
           return text;
         }
-      }, {async: true}))
+      }))
       .pipe(rename({
         dirname: character,
         basename: "index",
@@ -92,7 +92,7 @@ async function EJSPester(cb) {
           });
           return text;
         }
-      }, {async: true}))
+      }))
       .pipe(rename({
         dirname: pester,
         basename: "index",
@@ -148,7 +148,7 @@ async function index(cb) {
       query: {
         sort: false
       }
-    }, {async: true}))
+    }))
     .pipe(rename({
       dirname: "",
       basename: "index",
@@ -174,7 +174,7 @@ async function blood(cb) {
       query: {
         sort: true
       }
-    }, {async: true}))
+    }))
     .pipe(rename({
       dirname: "",
       basename: "index",
