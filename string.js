@@ -42,6 +42,10 @@ String.prototype.randomReplace = function (weight, regex, replacement) {
   else return this;
 }
 
+String.prototype.randomExtend = function (regex, replacement, max) {
+  return this.replace(new RegExp(regex, "gm"), replacement.repeat(Math.round(Math.random() * max)));
+}
+
 //math
 
 const clamp = (n, mi, ma) => Math.max(mi, Math.min(n, ma));

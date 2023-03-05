@@ -1,10 +1,11 @@
-keelez | Keelez Bunbat | MeowcaTheoRange | Jade
 thaobi | Thaobi ??? | MeowcaTheoRange | Rust
+joltif | Joltif Zoxxit | MeowcaTheoRange | Gold
 thaero | Thaero Rhange | MeowcaTheoRange | Olive
-syreta | Syreta Roseus | Pink-o Arts | Bronze
-xyuaad | Xyuaad Kleufi | Varcan | Gold
+keelez | Keelez Bunbat | MeowcaTheoRange | Jade
 archan | Archan Scurra | BeetrootBot | Purple
 lotine | Lotine Restej | Earl Grey | Purple
 capaca | Capaca Quincy | Earl Grey | Violet
 reswob | Reswob Soopak | lavenderSiren | Blue
+syreta | Syreta Roseus | Pink-o Arts | Bronze
 vryano | Vryano Sitnam | Varcan | Rust
+xyuaad | Xyuaad Kleufi | Varcan | Gold

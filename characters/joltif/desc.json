@@ -1,0 +1,202 @@
+{
+  "identity": {
+    "name": "Joltif Zoxxit",
+    "pronunciation": "joel-teef zox-sit",
+    "username": "technologicalConnectivity",
+    "age": 8,
+    "sign": {
+      "extended": "Gemrist",
+      "caste": "Gold"
+    },
+    "species": "Troll",
+    "pronouns": [
+      ["he", "him"],
+      ["they", "them"]
+    ],
+    "gender": "Male",
+    "height": "68"
+  },
+  "owners": [
+    {
+      "name": "MeowcaTheoRange",
+      "url": "https://meowcatheorange.github.io/"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "^",
+        "(!) "
+      ],
+      [
+        "\\?\\?\\?",
+        "    ???"
+      ],
+      [
+        "\\?\\?",
+        "    ??"
+      ],
+      [
+        "!!!",
+        "    !!!"
+      ],
+      [
+        "!!",
+        "    !!"
+      ]
+    ],
+    "functions": [
+      [
+        "toLowerCase"
+      ],
+      [
+        "randomExtend",
+        [
+          "\\.\\.\\.",
+          "[PUNC]",
+          "20"
+        ]
+      ],
+      [
+        "randomExtend",
+        [
+          "\\.\\.",
+          "[PUNC]",
+          "20"
+        ]
+      ],
+      [
+        "randomExtend",
+        [
+          "\\.",
+          "&nbsp;",
+          "20"
+        ]
+      ],
+      [
+        "randomExtend",
+        [
+          "\\,",
+          "&nbsp;",
+          "20"
+        ]
+      ],
+      [
+        "replaceAll",
+        [
+          "[PUNC]",
+          "."
+        ]
+      ]
+    ]
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "^",
+        "(.) "
+      ],
+      [
+        "\\?\\?\\?",
+        "    ???"
+      ],
+      [
+        "\\?\\?",
+        "    ??"
+      ],
+      [
+        "!!!",
+        "    !!!"
+      ],
+      [
+        "!!",
+        "    !!"
+      ]
+    ],
+    "functions": [
+      [
+        "toLowerCase"
+      ],
+      [
+        "randomExtend",
+        [
+          "\\.\\.\\.( |$)",
+          "[PUNC]",
+          "20"
+        ]
+      ],
+      [
+        "randomExtend",
+        [
+          "\\.\\.( |$)",
+          "[PUNC]",
+          "20"
+        ]
+      ],
+      [
+        "randomExtend",
+        [
+          "\\.( |$)",
+          "&nbsp;",
+          "20"
+        ]
+      ],
+      [
+        "randomExtend",
+        [
+          "\\,( |$)",
+          "&nbsp;",
+          "20"
+        ]
+      ],
+      [
+        "replaceAll",
+        [
+          "[PUNC]",
+          "."
+        ]
+      ]
+    ]
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "yes",
+    "ship": "no",
+    "fanfiction": "ask"
+  },
+  "preferences": {
+    "loves": [
+      "Electricity",
+      "Technology in general"
+    ],
+    "likes": [],
+    "neutral": [
+      "Power sockets"
+    ],
+    "dislikes": [],
+    "hates": [
+      "<a href=\"/TrollCall/char/keelez/\">Keelez Bunbat</a>, with a burning passion"
+    ]
+  },
+  "facts": [
+    "Snarky nerdbrain",
+    "Technologically adept",
+    "HumanCall webadmin",
+    "Literally looks like 🤓",
+    "Pupils are thunderbolt shapes"
+  ],
+  "colors": [
+    "#1B1B1B",
+    "#ffb838",
+    "#ff9020",
+    "#ff4820",
+    "#a1a100",
+    "#ff7f00",
+    "#2ec100",
+    "#ffb700",
+    "#8fff00",
+    "#313131",
+    "#181818"
+  ]
+}

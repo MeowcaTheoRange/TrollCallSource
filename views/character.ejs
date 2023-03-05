@@ -34,7 +34,7 @@
           </box>
           <box horizontal justify-around>
             <text code><%- Math.round((main.identity.age * 2.1666666666666665) * 10) / 10 %> years (<%- main.identity.age %> sweeps)</text>
-            <text code><%- main.identity.sign.extended %> (<%- main.identity.sign.caste %> caste)</text>
+            <text code><a target="_blank" href="http://hs.hiveswap.com/ezodiac/truesign.php?TS=<%- main.identity.sign.extended %>"><%- main.identity.sign.extended %></a> (<%- main.identity.sign.caste %> caste)</text>
             <text code><%- main.identity.species %></text>
             <text code>
               <%- main.identity.pronouns.map(x => x.join("/")).join(", ") %>
@@ -145,12 +145,12 @@
           <pesterlog>
             <dialogue><span style="color: rgb(<%- zodiac.text %>)"><%- main.identity.username %> [<%- main.identity.usernameShort %>]</span> is trolling you.</dialogue>
             <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("The quick brown fox jumped over the lazy dog.", false) %></dialogue>
-            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("My girl wove six dozen plaid jackets before she quit.", false) %></dialogue>
-            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("Sphinx of black quartz, judge my vow.", false) %></dialogue>
+            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("My girl wove six dozen plaid jackets before she quit?", false) %></dialogue>
+            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("Sphinx of black quartz, judge my vow!", false) %></dialogue>
             <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("Wait. Shh...", true) %></dialogue>
             <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("The quick brown fox jumped over the lazy dog.", true) %></dialogue>
-            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("My girl wove six dozen plaid jackets before she quit.", true) %></dialogue>
-            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("Sphinx of black quartz, judge my vow.", true) %></dialogue>
+            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("My girl wove six dozen plaid jackets before she quit?", true) %></dialogue>
+            <dialogue style="color: rgb(<%- zodiac.text %>)"><%- main.identity.usernameShort %>: <%- quirkify("Sphinx of black quartz, judge my vow!", true) %></dialogue>
           </pesterlog>
           <details>
             <summary>Show source text</summary>
