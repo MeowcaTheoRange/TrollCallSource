@@ -11,6 +11,10 @@ String.prototype.toAllUpperCase = function () {
   return this.split(" ").map(x => x.toFirstUpperCase()).join(" ");
 }
 
+String.prototype.carefulLowercase = function () {
+  return this.split(" ").map(x => (x.toUpperCase() == x) ? x : x.toLowerCase()).join(" ");
+}
+
 String.prototype.toFirstLastUpperCase = function () {
   var x = this.split(" ")
   x[0] = x[0].toFirstUpperCase();

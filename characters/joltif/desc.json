@@ -47,7 +47,7 @@
     ],
     "functions": [
       [
-        "toLowerCase"
+        "carefulLowercase"
       ],
       [
         "randomExtend",

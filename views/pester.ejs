@@ -41,6 +41,26 @@
               <span style="color: rgb(<%- zodiac[chars[charsList[1]].caste].text %>)"><%- chars[charsList[1]].name %> [<%- chars[charsList[1]].nameshort %>]</span>.
             </dialogue>
           </pesterlog>
+          <details>
+            <summary>Show source text</summary>
+            <pesterlog>
+              <dialogue>
+                <span><%- chars[charsList[0]].name %> [<%- chars[charsList[0]].nameshort %>]</span> 
+                began trolling 
+                <span><%- chars[charsList[1]].name %> [<%- chars[charsList[1]].nameshort %>]</span>.
+              </dialogue>
+              
+              <% list.forEach(function(dialogue){ %>
+              <dialogue><%- chars[dialogue.character].nameshort %>: <%- dialogue.text %></dialogue>
+              <% }); %>
+  
+              <dialogue>
+                <span><%- chars[charsList[0]].name %> [<%- chars[charsList[0]].nameshort %>]</span> 
+                ceased trolling 
+                <span><%- chars[charsList[1]].name %> [<%- chars[charsList[1]].nameshort %>]</span>.
+              </dialogue>
+            </pesterlog>
+          </details>
         </box>
         <box outline parent align-start span noimportant>
           <text big>Links</text>
