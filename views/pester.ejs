@@ -19,6 +19,7 @@
     <box span align-center justify-start>
       <box nopad span noimportant></box>
       <box align-stretch nopad>
+        <%- include('./nav.ejs', {name:name, type:"Pesterlog"}) %>
         <box outline span noimportant align-start>
           <text large>Pesterlog - <%- name.replace(/_/gm, " ") %></text>
           <!-- <text><%#- before %></text> -->
