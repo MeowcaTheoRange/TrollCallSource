@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/style.css" />
     <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/mspa.css" />
     <meta property="og:type" content="website">
-    <meta property="og:title" content="TrollCall -- Pesterlog &quot;<%- name %>&quot;">
+    <meta property="og:title" content="TrollCall -- <%- name.replace(/_/gm, " ").toAllUpperCase() %>">
+    <meta property="og:description" content="<%- chars[charsList[0]].name %> [<%- chars[charsList[0]].nameshort %>] began trolling <%- chars[charsList[1]].name %> [<%- chars[charsList[1]].nameshort %>].">
     <meta property="og:url" content="/TrollCall/pester/<%- name %>">
     <!-- <meta property="og:description" content="<%#- before %>"> -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
