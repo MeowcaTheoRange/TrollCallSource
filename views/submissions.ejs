@@ -15,15 +15,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
   </head>
   <body>
-    <box outline>
+    <box outline align-start noimportant>
       <input type="text" titleBox bg />
       <text>(pronounced like <input type="text" bg />)</text>
       <text>Also known as <text frame code><input type="text" name="user" id="username" /> <input type="text" readonly id="username2" /></text> online.</text>
       <textarea bg></textarea>
-      <text><input type="number" name="years" id="years" bg /> years (<input type="number" name="sweeps" id="sweeps" bg /> sweeps)</text>
-      <text><input type="text" name="extended" bg /> (<select bg name="zodiac" id="zod"></select> caste)</text>
-      <input type="text" name="species" bg value="Troll" />
-      
+      <text>Age: <input type="number" name="years" id="years" bg /> years (<input type="number" name="sweeps" id="sweeps" bg /> sweeps)</text>
+      <text>Sign: <input type="text" name="extended" bg /> (<select bg name="zodiac" id="zod"></select> caste)</text>
+      <text>Species: <text code frame>Troll<input type="text" name="species" value="-" /></text></text>
+      <text>Gender: <input type="text" name="gender" bg value="" /></text>
+      <text>Pronouns: <input type="text" bg name="pronouns" /></text>
+    </box>
+    <box outline align-start noimportant>
+      <box frame code span>
+        <text><select name="artare" id="zod">
+          <option value="yes">Yes</option>
+          <option value="ask">Ask</option>
+          <option selected value="no">No</option>
+        </select> Making art of this character.</text>
+        <text><select name="artothers" id="zod">
+          <option value="yes">Yes</option>
+          <option value="ask">Ask</option>
+          <option selected value="no">No</option>
+        </select> Making art of this character with other characters.</text>
+        <text><select name="artkin" id="zod">
+          <option value="yes">Yes</option>
+          <option value="ask">Ask</option>
+          <option selected value="no">No</option>
+        </select> Kinning this character.</text>
+        <text><select name="artship" id="zod">
+          <option value="yes">Yes</option>
+          <option value="ask">Ask</option>
+          <option selected value="no">No</option>
+        </select> Shipping this character with others.</text>
+        <text><select name="artfan" id="zod">
+          <option value="yes">Yes</option>
+          <option value="ask">Ask</option>
+          <option selected value="no">No</option>
+        </select> Creating fanfiction of this character.</text>
+      </box>
     </box>
     <script type="module">
       import * as color from "/TrollCall/assets/scripts/color.js";
@@ -31,21 +61,12 @@
       color.themeColor("#404040", "sec");
       var zodiac = <%- zodiac %>;
       var select = document.querySelector("#zod");
-      var username = document.querySelector("#username");
-      var usernameShort = document.querySelector("#username2");
       Object.keys(zodiac).forEach(z => select.innerHTML += `<option value="${z}">${z}</option>`);
       select.onchange = () => {
         color.themeColor(zodiac[select.value].main, "pri");
         color.themeColor(color.negate(zodiac[select.value].main), "sec");
       }; select.onchange();
-      usernameShort.onclick = () => {
-        username.focus();
-      };
-      username.onkeyup = () => {
-        usernameShort.value = `[${username.value.split(/(?=[A-Z])/).map(x => x[0]).join("").toUpperCase().slice(0, 2).padEnd(2, " ")}]`;
-        username.style.width = username.value.length + "ch";
-      }; username.onkeyup();
-      
     </script>
+    <script type="module" src="/TrollCall/assets/scripts/submit.js"></script>
   </body>
 </html>

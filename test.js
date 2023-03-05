@@ -121,4 +121,10 @@ app.get('/TrollCall/pester/:pester', (req, res) => {
    res.render('pester', getPester(req.params.pester));
 });
 
+app.get('/TrollCall/submit/', (req, res) => {
+  res.render('submissions', {
+    zodiac: JSON.stringify(zodiacShit)
+  });
+});
+
 app.listen(5500);

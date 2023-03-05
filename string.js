@@ -1,7 +1,10 @@
 String.prototype.toFirstUpperCase = function () {
-  var arr = this.toLowerCase().split("");
-  arr.unshift(arr.shift().toUpperCase());
-  return arr.join("");
+  var done = false;
+  return this.split("").map((v) => {
+    var x = done ? v.toLowerCase() : v.toUpperCase();
+    if (v.toUpperCase() !== v.toLowerCase()) done = true;
+    return x;
+  }).join("");
 }
 
 String.prototype.toAllUpperCase = function () {
@@ -16,9 +19,12 @@ String.prototype.toFirstLastUpperCase = function () {
 }
 
 String.prototype.toFirstLowerCase = function () {
-  var arr = this.toUpperCase().split("");
-  arr.unshift(arr.shift().toLowerCase());
-  return arr.join("");
+  var done = false;
+  return this.split("").map((v) => {
+    var x = done ? v.toUpperCase() : v.toLowerCase();
+    if (v.toLowerCase() !== v.toUpperCase()) done = true;
+    return x;
+  }).join("");
 }
 
 String.prototype.toAllLowerCase = function () {
