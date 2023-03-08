@@ -6,16 +6,15 @@ const colors = require("./string.js");
 const app = express();
 app.set('view engine', 'ejs');
 app.use('/assets', express.static(path.join(__dirname, 'assets')))
-app.use('/characters', express.static(path.join(__dirname, 'characters')))
 app.use('/assets/styles', expressLess(path.join(__dirname, 'assets', 'less')));
 var zodiacShit = JSON.parse(fs.readFileSync(path.join(__dirname, "assets", "ZODIAC_SHIT.json"), 'utf8'));
 var getCharacter = (character) => {
-  var main = JSON.parse(fs.readFileSync(path.join(__dirname, "characters", character, "desc.json"), 'utf8'));
+  var main = JSON.parse(fs.readFileSync(path.join(__dirname, "char", character, "desc.json"), 'utf8'));
   main.identity.usernameShort = main.identity.username.split(/(?=[A-Z])/).map(x => x[0]).join("").toUpperCase();
   return {
     "char": character,
     "main": main,
-    "about": fs.readFileSync(path.join(__dirname, "characters", character, "about.txt"), 'utf8').split("\n"),
+    "about": fs.readFileSync(path.join(__dirname, "char", character, "about.txt"), 'utf8').split("\n"),
     "zodiac": zodiacShit[main.identity.sign.caste],
     "policies": {"yes": "done", "ask": "question_mark", "no": "close"},
     "quirkify": (x, quiet) => {
@@ -38,7 +37,7 @@ var getPester = (pester) => {
   var chars = logSpl[0].split(" > ");
 
   chars.forEach(character => {
-    var them = JSON.parse(fs.readFileSync(path.join(__dirname, "characters", character, "desc.json"), 'utf8'));
+    var them = JSON.parse(fs.readFileSync(path.join(__dirname, "char", character, "desc.json"), 'utf8'));
     charsQuirks[character] = {
       "quirks": them.quirks, 
       "quirksQuiet": them.quirksQuiet,
@@ -115,7 +114,9 @@ app.get('/blood/', (req, res) => {
 });
 app.get('/char/:char', (req, res) => {
    res.render('character', getCharacter(req.params.char));
-   // TODO: draggy waggy thing (tooltip on hover (just take it from the old website (it's super easy (requires JS though (oh well)))))
+});
+app.get('/char/:char/image.png', (req, res) => {
+  res.sendFile(path.join(__dirname, "char", req.params.char, "image.png"));
 });
 app.get('/pester/:pester', (req, res) => {
    res.render('pester', getPester(req.params.pester));

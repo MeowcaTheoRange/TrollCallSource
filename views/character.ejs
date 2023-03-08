@@ -12,7 +12,7 @@
     <meta property="og:type" content="profile">
     <meta property="og:title" content="TrollCall -- <%- main.identity.name.toUpperCase() %>">
     <meta property="og:url" content="/char/<%- char %>">
-    <meta property="og:image" content="/characters/<%- char %>/image.png">
+    <meta property="og:image" content="/char/<%- char %>/image.png">
     <meta property="og:description" content="<%= about[0] %> [read more...]">
     <meta property="profile:first_name" content="<%= main.identity.name.split(" ")[0].toUpperCase() %>">
     <meta property="profile:last_name" content="<%= main.identity.name.split(" ")[1].toUpperCase() %>">
@@ -65,7 +65,7 @@
         </box>
       </box>
       <box parent nopad important>
-        <img src="/characters/<%- char %>/image.png"/>
+        <img src="/char/<%- char %>/image.png"/>
       </box>
     </box>
     <box nopad align-start justify-start>
@@ -226,6 +226,7 @@
           <a href="javascript:void(0);" onclick="navigator.clipboard.write('https://trollcall.xyz/pester/<%- char %>')" code>https://trollcall.xyz/pester/<%- char %></a>
         </box>
       </box>
+      <%- include('./footer.ejs') %>
     </box>
     <script src="/assets/scripts/string.js"></script>
     <script type="module">

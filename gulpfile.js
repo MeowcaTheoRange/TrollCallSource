@@ -12,15 +12,15 @@ var getPester = (pester) => {
 
 
 async function EJS(cb) {
-  var dirs = fs.readdirSync(__dirname + "/characters/");
+  var dirs = fs.readdirSync(__dirname + "/char/");
   dirs.forEach((character) => {
-    var main = JSON.parse(fs.readFileSync("characters/" + character + "/desc.json", 'utf8'));
+    var main = JSON.parse(fs.readFileSync("char/" + character + "/desc.json", 'utf8'));
     main.identity.usernameShort = main.identity.username.split(/(?=[A-Z])/).map(x => x[0]).join("").toUpperCase();
     return src("views/character.ejs")
       .pipe(ejs({
         "char": character,
         "main": main,
-        "about": fs.readFileSync("characters/" + character + "/about.txt", 'utf8').split("\n"),
+        "about": fs.readFileSync("char/" + character + "/about.txt", 'utf8').split("\n"),
         "zodiac": zodiacShit[main.identity.sign.caste],
         "policies": {"yes": "done", "ask": "question_mark", "no": "close"},
         "quirkify": (x, quiet) => {
@@ -55,7 +55,7 @@ async function EJSPester(cb) {
     var chars = logSpl[0].split(" > ");
 
     chars.forEach(character => {
-      var them = JSON.parse(fs.readFileSync("characters/" + character + "/desc.json", 'utf8'));
+      var them = JSON.parse(fs.readFileSync("char/" + character + "/desc.json", 'utf8'));
       charsQuirks[character] = {
         "quirks": them.quirks, 
         "quirksQuiet": them.quirksQuiet,
@@ -127,8 +127,8 @@ function styles(cb) {
 }
 
 function pics(cb) {
-  return src('characters/*/*.png')
-    .pipe(dest('../TrollCall/characters/'));
+  return src('char/*/*.png')
+    .pipe(dest('../TrollCall/char/'));
 }
 
 async function index(cb) {

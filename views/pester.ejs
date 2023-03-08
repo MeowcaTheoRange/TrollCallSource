@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
   </head>
   <body>
-    <box span align-center justify-start>
+    <box span align-center nopad justify-start>
       <box nopad span noimportant></box>
       <box align-stretch nopad>
         <%- include('./nav.ejs', {name:name, type:"Pesterlog"}) %>
@@ -65,9 +65,10 @@
         <box outline parent align-start span noimportant>
           <text big>Links</text>
           <box frame align-left important>
-            <a href="javascript:void(0);" onclick="navigator.clipboard.write('https://trollcall.xyz/pester/<%- char %>')" code>https://trollcall.xyz/pester/<%- char %></a>
+            <a href="javascript:void(0);" onclick="navigator.clipboard.write('https://trollcall.xyz/pester/<%- name %>')" code>https://trollcall.xyz/pester/<%- name %></a>
           </box>
         </box>
+        <%- include('./footer.ejs') %>
       </box>
     </box>
     <script type="module">

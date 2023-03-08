@@ -16,29 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
   </head>
   <body>
-    <box span align-center justify-start>
+    <box span nopad align-center justify-start>
       <box nopad span noimportant></box>
       <box align-stretch nopad>
         <box outline align-start noimportant>
           <text large>TrollCall</text>
           <box>
             <text>Welcome to TrollCall, a website for indexing various fantrolls. Check them out!</text>
-          </box>
-        </box>
-        <box frame outline align-start noimportant>
-          <text large>...Get your own space!</text>
-          <box>
-            <text>Want your own fantroll to have a cool refsheet? Simply take <a href="https://forms.gle/Gs4rccZpCt7KKmyx6">this form</a>!</text>
-            <spacer noshow></spacer>
-            <text>Already have a refsheet and want to update outdated information? DM me <a href="https://meowcatheorange.github.io/">on Discord</a>! (follow website link then click "Discord Friend Invite" icon)</text>
-          </box>
-          <spacer></spacer>
-          <text large>...Join the Discord Server!</text>
-          <box>
-            <text>I have a Discord server now. It's pretty cool. I think.</text>
-            <text>I share it with another project one of my friends are making, so sorry for the clutter, haha</text>
-            <spacer noshow></spacer>
-            <text><a href="https://discord.gg/dxS3Nc6VXB">JOIN HERE</a></text>
           </box>
         </box>
         <box horizontal span nopad>
@@ -77,7 +61,7 @@
                       <box outline parent child pattern align-center>
                         <text large span><%- char[1] %></text>
                         <text span><%- query.sort ? char[2] : char[3] %></text>
-                        <img icon src="/characters/<%- char[0] %>/image.png"/>
+                        <img icon src="/char/<%- char[0] %>/image.png"/>
                       </box>
                     </a>
                     <% }); %>
@@ -86,35 +70,80 @@
                 </box>
               </box>
           </box>
-          <box outline align-start parent span>
-            <box align-start nopad important span>
-              <text large id="pesters">Pesterlogs</text>
-              <spacer></spacer>
-              <box span>
-                <% logs.forEach(function(log){ %>
-                  <a href="/pester/<%- log[0] %>" boxish span>
-                    <box outline frame pattern vcontent align-left span>
-                      <text big><%- log[0].replace(/_/gi, " ") %></text>
-                      <text><%- new Date(log[2] * 1000).toLocaleString() %></text>
-                      <spacer noshow></spacer>
-                      <text><%- log[1] %></text>
+          <box nopad parent>
+            <box outline align-start parent noimportant vcontent span>
+              <box align-start nopad important span>
+                <text large id="pesters">Extras</text>
+                <spacer></spacer>
+                <box span>
+                  <a href="https://discord.trollcall.xyz" boxish span>
+                    <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#5865F2", "this-color") %>">
+                      <text big>Discord</text>
+                      <text>We have a Discord server! It's pretty cool. You should join it!</text>
                     </box>
                   </a>
-                <% }); %>
+                  <a href="https://signup.trollcall.xyz" boxish span>
+                    <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#FF0000", "this-color") %>">
+                      <text big>Signup</text>
+                      <text>Want your own fantroll to have a cool refsheet? Simply take this form!</text>
+                    </box>
+                  </a>
+                  <a href="https://hs.trollcall.xyz" boxish span>
+                    <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#8000FF", "this-color") %>">
+                      <text big>Hiveswap</text>
+                      <text>Looking for the original Friendsim TrollCall website? Here it is!</text>
+                    </box>
+                  </a>
+                  <a href="https://source.trollcall.xyz" boxish span>
+                    <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#000000", "this-color") %>">
+                      <text big>Source</text>
+                      <text>Want to contribute?</text>
+                      <text>...why?</text>
+                    </box>
+                  </a>
+                  <a href="https://legacy.trollcall.xyz" boxish span>
+                    <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#ff0000", "this-color") %>">
+                      <text big>Legacy</text>
+                      <text>The original TrollCall website. It is most definitely missing characters, but it has more fancy bullshit.</text>
+                    </box>
+                  </a>
+                  <spacer></spacer>
+                  <a href="https://me.trollcall.xyz" boxish span>
+                    <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#FF8000", "this-color") %>">
+                      <text big>MeowcaTheoRange</text>
+                      <text>Website creator, form manager</text>
+                    </box>
+                  </a>
+                  <a href="https://redact.trollcall.xyz" boxish span>
+                    <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#808080", "this-color") %>">
+                      <text big>Redact4K</text>
+                      <text>Domain holder</text>
+                    </box>
+                  </a>
+                </box>
+              </box>
+            </box>
+            <box outline align-start parent span>
+              <box align-start nopad important span>
+                <text large id="pesters">Pesterlogs</text>
+                <spacer></spacer>
+                <box span>
+                  <% logs.forEach(function(log){ %>
+                    <a href="/pester/<%- log[0] %>" boxish span>
+                      <box outline frame pattern vcontent align-left span>
+                        <text big><%- log[0].replace(/_/gi, " ") %></text>
+                        <text><%- new Date(log[2] * 1000).toLocaleString() %></text>
+                        <spacer noshow></spacer>
+                        <text><%- log[1] %></text>
+                      </box>
+                    </a>
+                  <% }); %>
+                </box>
               </box>
             </box>
           </box>
         </box>
-        <box frame outline align-stretch noimportant>
-          <text span>TrollCall (this website, hosted on NOT hiveswap.com)</text>
-          <text span>© 2023 MeowcaTheoRange. Some characters may not be owned by me.</text>
-          <spacer noshow></spacer>
-          <text span>This website uses character species and designs from the property Homestuck.</text>
-          <text span>© Homestuck and VIZ Media</text>
-          <spacer noshow></spacer>
-          <text span>Design and name somewhat inspired by HIVESWAP's <a href="http://hs.hiveswap.com/trollcall/">Troll Call</a> page.</text>
-          <text span>Homestuck and HIVESWAP © Homestuck Inc.</text>
-        </box>
+        <%- include('./footer.ejs') %>
       </box>
     </box>
     <!-- <script type="module">
