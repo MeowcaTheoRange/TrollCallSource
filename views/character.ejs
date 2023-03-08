@@ -6,13 +6,13 @@
     <title><%- main.identity.name %></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/main.css" />
-    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/mspa.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/mspa.css" />
     <meta property="og:type" content="profile">
     <meta property="og:title" content="TrollCall -- <%- main.identity.name.toUpperCase() %>">
-    <meta property="og:url" content="/TrollCall/char/<%- char %>">
-    <meta property="og:image" content="/TrollCall/characters/<%- char %>/image.png">
+    <meta property="og:url" content="/char/<%- char %>">
+    <meta property="og:image" content="/characters/<%- char %>/image.png">
     <meta property="og:description" content="<%= about[0] %> [read more...]">
     <meta property="profile:first_name" content="<%= main.identity.name.split(" ")[0].toUpperCase() %>">
     <meta property="profile:last_name" content="<%= main.identity.name.split(" ")[1].toUpperCase() %>">
@@ -65,7 +65,7 @@
         </box>
       </box>
       <box parent nopad important>
-        <img src="/TrollCall/characters/<%- char %>/image.png"/>
+        <img src="/characters/<%- char %>/image.png"/>
       </box>
     </box>
     <box nopad align-start justify-start>
@@ -223,17 +223,17 @@
       <box outline parent align-start span noimportant>
         <text big>Links</text>
         <box frame align-left important>
-          <a href="https://friendsim.com/TrollCall/char/<%- char %>" code>https://friendsim.com/TrollCall/char/<%- char %></a>
-          <a href="https://meowcatheorange.github.io/TrollCall/char/<%- char %>" code>https://meowcatheorange.github.io/TrollCall/char/<%- char %></a>
+          <a href="https://friendsim.com/char/<%- char %>" code>https://friendsim.com/char/<%- char %></a>
+          <a href="https://meowcatheorange.github.io/char/<%- char %>" code>https://meowcatheorange.github.io/char/<%- char %></a>
         </box>
       </box>
     </box>
-    <script src="/TrollCall/assets/scripts/string.js"></script>
+    <script src="/assets/scripts/string.js"></script>
     <script type="module">
-import * as color from "/TrollCall/assets/scripts/color.js";
+import * as color from "/assets/scripts/color.js";
 color.themeColor([<%- zodiac.main %>], "pri");
 color.themeColor(color.negate([<%- zodiac.main %>]), "sec");
     </script>
-    <script type="module" src="/TrollCall/assets/scripts/hover.js"></script>
+    <script type="module" src="/assets/scripts/hover.js"></script>
   </body>
 </html>

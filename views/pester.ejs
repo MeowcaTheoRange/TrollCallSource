@@ -6,13 +6,13 @@
     <title>TrollCall</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
-    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/main.css" />
-    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/mspa.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/mspa.css" />
     <meta property="og:type" content="website">
     <meta property="og:title" content="TrollCall -- <%= name.replace(/_/gm, " ").toAllUpperCase() %>">
     <meta property="og:description" content="<%= chars[charsList[0]].name %> [<%= chars[charsList[0]].nameshort %>] began trolling <%- chars[charsList[1]].name %> [<%- chars[charsList[1]].nameshort %>].">
-    <meta property="og:url" content="/TrollCall/pester/<%- name %>">
+    <meta property="og:url" content="/pester/<%- name %>">
     <!-- <meta property="og:description" content="<%#- before %>"> -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
   </head>
@@ -65,14 +65,14 @@
         <box outline parent align-start span noimportant>
           <text big>Links</text>
           <box frame align-left important>
-            <a href="https://friendsim.com/TrollCall/pester/<%- name %>" code>https://friendsim.com/TrollCall/pester/<%- name %></a>
-            <a href="https://meowcatheorange.github.io/TrollCall/pester/<%- name %>" code>https://meowcatheorange.github.io/TrollCall/pester/<%- name %></a>
+            <a href="https://friendsim.com/pester/<%- name %>" code>https://friendsim.com/pester/<%- name %></a>
+            <a href="https://meowcatheorange.github.io/pester/<%- name %>" code>https://meowcatheorange.github.io/pester/<%- name %></a>
           </box>
         </box>
       </box>
     </box>
     <script type="module">
-      import * as color from "/TrollCall/assets/scripts/color.js";
+      import * as color from "/assets/scripts/color.js";
       color.themeColor("#ffffff", "pri");
       color.themeColor("#404040", "sec");
     </script>

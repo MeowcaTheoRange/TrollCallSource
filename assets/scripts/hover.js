@@ -1,4 +1,4 @@
-import * as color from "/TrollCall/assets/scripts/color.js";
+import * as color from "/assets/scripts/color.js";
 
 var tag = document.createElement("div");
 tag.innerHTML = `<div class="label"></div>

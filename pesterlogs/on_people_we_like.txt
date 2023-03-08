@@ -71,7 +71,7 @@ keelez: My FLUSHED crush?
 thaobi: What else would I mean
 thaobi: You've been talking about your flushed crush this whole time.
 keelez: Shut up...
-keelez: It's <a href="/TrollCall/char/madhie/">Madhie</a>.
+keelez: It's <a href="/char/madhie/">Madhie</a>.
 thaobi: Who
 keelez: You know, the... other jade girl. Longer hair than me... pointy ears?
 thaobi: Um

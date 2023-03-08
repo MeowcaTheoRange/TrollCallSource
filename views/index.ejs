@@ -6,12 +6,12 @@
     <title>TrollCall</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
-    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/main.css" />
-    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/mspa.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/mspa.css" />
     <meta property="og:type" content="website">
     <meta property="og:title" content="TrollCall -- Index">
-    <meta property="og:url" content="/TrollCall/">
+    <meta property="og:url" content="/">
     <meta property="og:description" content="A website for indexing various fantrolls. Check them out.">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
   </head>
@@ -71,18 +71,18 @@
               <box align-start parent nopad important>
                 <text large id="chars">Characters</text>
                 <spacer></spacer>
-                <a href=<%- query.sort ? `"/TrollCall/">(Sort by user)` : `"/TrollCall/blood/">(Sort by caste)` %></a>
+                <a href=<%- query.sort ? `"/">(Sort by user)` : `"/blood/">(Sort by caste)` %></a>
                 <box span>
                 <% array.forEach(function(user){ %>
                   <text big id="<%- user[0] %>"><%- user[0] %><%- query.sort ? "" : (user[0].slice(-1) == "s" ? "' Characters" : "'s Characters") %></text>
                   <!-- <spacer></spacer> -->
                   <box horizontal align-start span justify-center vcontent>
                     <% user[1].forEach(function(char){ %>
-                    <a href="/TrollCall/char/<%- char[0] %>" boxish style="<%- colors.themeColor(zodiac[char[3]].main, "this-color") %>">
+                    <a href="/char/<%- char[0] %>" boxish style="<%- colors.themeColor(zodiac[char[3]].main, "this-color") %>">
                       <box outline parent child pattern align-center>
                         <text large span><%- char[1] %></text>
                         <text span><%- query.sort ? char[2] : char[3] %></text>
-                        <img icon src="/TrollCall/characters/<%- char[0] %>/image.png"/>
+                        <img icon src="/characters/<%- char[0] %>/image.png"/>
                       </box>
                     </a>
                     <% }); %>
@@ -97,7 +97,7 @@
               <spacer></spacer>
               <box span>
                 <% logs.forEach(function(log){ %>
-                  <a href="/TrollCall/pester/<%- log[0] %>" boxish span>
+                  <a href="/pester/<%- log[0] %>" boxish span>
                     <box outline frame pattern vcontent align-left span>
                       <text big><%- log[0].replace(/_/gi, " ") %></text>
                       <text><%- new Date(log[2] * 1000).toLocaleString() %></text>
@@ -123,7 +123,7 @@
       </box>
     </box>
     <!-- <script type="module">
-      import * as color from "/TrollCall/assets/scripts/color.js";
+      import * as color from "/assets/scripts/color.js";
       color.themeColor("#ffffff", "pri");
       color.themeColor("#404040", "sec");
     </script> -->

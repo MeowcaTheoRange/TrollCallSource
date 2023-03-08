@@ -5,9 +5,9 @@ const fs = require('fs');
 const colors = require("./string.js");
 const app = express();
 app.set('view engine', 'ejs');
-app.use('/TrollCall/assets', express.static(path.join(__dirname, 'assets')))
-app.use('/TrollCall/characters', express.static(path.join(__dirname, 'characters')))
-app.use('/TrollCall/assets/styles', expressLess(path.join(__dirname, 'assets', 'less')));
+app.use('/assets', express.static(path.join(__dirname, 'assets')))
+app.use('/characters', express.static(path.join(__dirname, 'characters')))
+app.use('/assets/styles', expressLess(path.join(__dirname, 'assets', 'less')));
 var zodiacShit = JSON.parse(fs.readFileSync(path.join(__dirname, "assets", "ZODIAC_SHIT.json"), 'utf8'));
 var getCharacter = (character) => {
   var main = JSON.parse(fs.readFileSync(path.join(__dirname, "characters", character, "desc.json"), 'utf8'));
@@ -77,7 +77,7 @@ var getPester = (pester) => {
   };
 }
 
-app.get('/TrollCall/', (req, res) => {
+app.get('/', (req, res) => {
   var array = fs.readFileSync(path.join(__dirname, "assets", "list.txt"), "utf-8");
   var logs = fs.readFileSync(path.join(__dirname, "assets", "logs.txt"), "utf-8").split("\n").map(x => x.split(" | "));
   var map = {};
@@ -95,7 +95,7 @@ app.get('/TrollCall/', (req, res) => {
     }
   }); // TODO: get list of folders, then put it in page
 });
-app.get('/TrollCall/blood/', (req, res) => {
+app.get('/blood/', (req, res) => {
   var array = fs.readFileSync(path.join(__dirname, "assets", "list.txt"), "utf-8");
   var logs = fs.readFileSync(path.join(__dirname, "assets", "logs.txt"), "utf-8").split("\n").map(x => x.split(" | "));
   var map = {};
@@ -113,15 +113,15 @@ app.get('/TrollCall/blood/', (req, res) => {
     }
   }); // TODO: get list of folders, then put it in page
 });
-app.get('/TrollCall/char/:char', (req, res) => {
+app.get('/char/:char', (req, res) => {
    res.render('character', getCharacter(req.params.char));
    // TODO: draggy waggy thing (tooltip on hover (just take it from the old website (it's super easy (requires JS though (oh well)))))
 });
-app.get('/TrollCall/pester/:pester', (req, res) => {
+app.get('/pester/:pester', (req, res) => {
    res.render('pester', getPester(req.params.pester));
 });
 
-app.get('/TrollCall/submit/', (req, res) => {
+app.get('/submit/', (req, res) => {
   res.render('submissions', {
     zodiac: JSON.stringify(zodiacShit)
   });

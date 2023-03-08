@@ -6,12 +6,12 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/main.css" />
-    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="/TrollCall/assets/styles/mspa.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/mspa.css" />
     <meta property="og:type" content="website">
     <meta property="og:title" content="TrollCall -- Submit">
-    <meta property="og:url" content="/TrollCall/submit/">
+    <meta property="og:url" content="/submit/">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
   </head>
   <body>
@@ -57,7 +57,7 @@
       </box>
     </box>
     <script type="module">
-      import * as color from "/TrollCall/assets/scripts/color.js";
+      import * as color from "/assets/scripts/color.js";
       color.themeColor("#ffffff", "pri");
       color.themeColor("#404040", "sec");
       var zodiac = <%- zodiac %>;
@@ -68,6 +68,6 @@
         color.themeColor(color.negate(zodiac[select.value].main), "sec");
       }; select.onchange();
     </script>
-    <script type="module" src="/TrollCall/assets/scripts/submit.js"></script>
+    <script type="module" src="/assets/scripts/submit.js"></script>
   </body>
 </html>
