@@ -9,8 +9,12 @@ var zodiacShit = JSON.parse(fs.readFileSync("assets/ZODIAC_SHIT.json", 'utf8'));
 var getPester = (pester) => {
   
 }
-
-
+var getFlairs = () => {
+  var arr = fs.readFileSync(__dirname+ "/assets" + "/flair.txt", 'utf8').split("\n").map(x => x.split(" | "));
+  var obj = {};
+  arr.forEach(([key, ...values]) => obj[key] = values);
+  return obj;
+}
 async function EJS(cb) {
   var dirs = fs.readdirSync(__dirname + "/char/");
   dirs.forEach((character) => {
@@ -23,6 +27,8 @@ async function EJS(cb) {
         "about": fs.readFileSync("char/" + character + "/about.txt", 'utf8').split("\n"),
         "zodiac": zodiacShit[main.identity.sign.caste],
         "policies": {"yes": "done", "ask": "question_mark", "no": "close"},
+        flairs: getFlairs(),
+        colors,
         "quirkify": (x, quiet) => {
           var text = x;
           main[quiet ? "quirksQuiet": "quirks"]?.regexes?.forEach(regex => {
@@ -144,6 +150,7 @@ async function index(cb) {
       array: Object.entries(map), 
       logs,
       zodiac: zodiacShit,
+      flairs: getFlairs(),
       colors,
       query: {
         sort: false
@@ -170,6 +177,7 @@ async function blood(cb) {
       array: Object.entries(map).sort((a, b) => zodiacShit[a[0]].sort - zodiacShit[b[0]].sort), 
       logs,
       zodiac: zodiacShit,
+      flairs: getFlairs(),
       colors,
       query: {
         sort: true

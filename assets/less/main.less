@@ -247,6 +247,9 @@ body {
       padding: 0;
       // margin: 8px;
     }
+    &[nogap] {
+      gap: 0;
+    }
     &[noimportant] {
       flex: 0;
     }
@@ -271,7 +274,7 @@ body {
     }
 
     &[content] {
-      width: max-content;
+      min-width: min-content;
       overflow: visible;
     }
 
@@ -297,6 +300,10 @@ body {
     &[big] {
       font-size: 18px;
     }
+    &[normal] {
+      font-size: 16px;
+      font-family: 'Nunito', sans-serif;
+    }
 
     &[pad] {
       padding: 8px;
@@ -310,6 +317,11 @@ body {
     }
     &[align-right] {
       text-align: right;
+    }
+
+    &[content] {
+      width: max-content;
+      overflow: visible;
     }
 
     &[nobreak] {

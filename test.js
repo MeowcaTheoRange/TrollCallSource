@@ -8,6 +8,12 @@ app.set('view engine', 'ejs');
 app.use('/assets', express.static(path.join(__dirname, 'assets')))
 app.use('/assets/styles', expressLess(path.join(__dirname, 'assets', 'less')));
 var zodiacShit = JSON.parse(fs.readFileSync(path.join(__dirname, "assets", "ZODIAC_SHIT.json"), 'utf8'));
+var getFlairs = () => {
+  var arr = fs.readFileSync(path.join(__dirname, "assets", "flair.txt"), 'utf8').split("\n").map(x => x.split(" | "));
+  var obj = {};
+  arr.forEach(([key, ...values]) => obj[key] = values);
+  return obj;
+}
 var getCharacter = (character) => {
   var main = JSON.parse(fs.readFileSync(path.join(__dirname, "char", character, "desc.json"), 'utf8'));
   main.identity.usernameShort = main.identity.username.split(/(?=[A-Z])/).map(x => x[0]).join("").toUpperCase();
@@ -17,6 +23,8 @@ var getCharacter = (character) => {
     "about": fs.readFileSync(path.join(__dirname, "char", character, "about.txt"), 'utf8').split("\n"),
     "zodiac": zodiacShit[main.identity.sign.caste],
     "policies": {"yes": "done", "ask": "question_mark", "no": "close"},
+    flairs: getFlairs(),
+    colors,
     "quirkify": (x, quiet) => {
       var text = x;
       main[quiet ? "quirksQuiet": "quirks"]?.regexes?.forEach(regex => {
@@ -89,6 +97,7 @@ app.get('/', (req, res) => {
     logs,
     zodiac: zodiacShit,
     colors,
+    flairs: getFlairs(),
     query: {
       sort: false
     }
@@ -107,6 +116,7 @@ app.get('/blood/', (req, res) => {
     logs,
     zodiac: zodiacShit,
     colors,
+    flairs: getFlairs(),
     query: {
       sort: true
     }

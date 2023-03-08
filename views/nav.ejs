@@ -1,5 +1,33 @@
 <box frame horizontal justify-between noimportant code align-center>
   <a href="/">&lt;== Back</a>
-  <a href="https://trollcall.xyz/<%- link %>" onclick="event.preventDefault();navigator.clipboard.writeText(event.target.getAttribute('href'));"><text big class="FORCEUNDERLINE"><%- locals.name.replace(/_/gm, " ").toAllUpperCase() %></text></a>
+  <a href="https://trollcall.xyz/<%- link %>" onclick="linkClick(event)"><text big class="FORCEUNDERLINE"><%- locals.name.replace(/_/gm, " ").toAllUpperCase() %></text></a>
   <text><%- type %></text>
 </box>
+<box frame id="ClipPrompt"></box>
+<style>
+  #ClipPrompt {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 72px;  
+    left: 50%; 
+    transform: translateX(-50%);
+    transition: opacity 2s;
+  }
+  .ClipVisible {
+    opacity: 1 !important;
+    transition: opacity 0.25s !important;
+  }
+</style>
+<script>
+  function linkClick(e) {
+    console.log(e.target.parentElement);
+    e.preventDefault();
+    navigator.clipboard.writeText(e.target.parentElement.getAttribute('href'));
+    document.getElementById("ClipPrompt").innerHTML = `<text>Copied <i>${e.target.parentElement.getAttribute('href')}</i> to clipboard</text>`;
+    document.getElementById("ClipPrompt").classList.add("ClipVisible");
+    setTimeout(() => {
+      document.getElementById("ClipPrompt").classList.remove("ClipVisible");
+    }, 1500);
+  }
+</script>

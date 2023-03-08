@@ -26,7 +26,7 @@
           </box>
         </box>
         <box horizontal span nopad>
-          <box outline span important strictparent>
+          <box outline span important strictparent content>
             <!-- <box align-start noimportant frame>
                 <text big>Contents</text>
                 <box parent important>
@@ -52,14 +52,15 @@
                 <spacer></spacer>
                 <a href=<%- query.sort ? `"/">(Sort by user)` : `"/blood/">(Sort by caste)` %></a>
                 <box span>
+                  <% console.log(flairs) %>
                 <% array.forEach(function(user){ %>
-                  <text big id="<%- user[0] %>"><%- user[0] %><%- query.sort ? "" : (user[0].slice(-1) == "s" ? "' Characters" : "'s Characters") %></text>
+                  <box horizontal nopad span vcontent align-center nogap id="<%- user[0] %>"><text big><%- user[0] %></text><% if(flairs[user[0]]) { %>&nbsp;<text frame normal style="<%- colors.themeColor(flairs[user[0]][1], "this-color") %>"><%- flairs[user[0]][0] %></text><% } %><text big><%- query.sort ? "" : (user[0].slice(-1) == "s" ? "'" : "'s") %> Characters</text></box>
                   <!-- <spacer></spacer> -->
                   <box horizontal align-start span justify-center vcontent>
                     <% user[1].forEach(function(char){ %>
                     <a href="/char/<%- char[0] %>" boxish style="<%- colors.themeColor(zodiac[char[3]].main, "this-color") %>">
-                      <box outline parent child pattern align-center>
-                        <text large span><%- char[1] %></text>
+                      <box outline strictparent child pattern align-center>
+                        <text large><%- char[1] %></text>
                         <text span><%- query.sort ? char[2] : char[3] %></text>
                         <img icon src="/char/<%- char[0] %>/image.png"/>
                       </box>
@@ -70,51 +71,51 @@
                 </box>
               </box>
           </box>
-          <box nopad parent>
-            <box outline align-start parent noimportant vcontent span>
+          <box nopad strictparent>
+            <box outline align-start noimportant vcontent span>
               <box align-start nopad important span>
                 <text large id="pesters">Extras</text>
                 <spacer></spacer>
                 <box span>
-                  <a href="https://discord.trollcall.xyz" boxish span>
+                  <a href="//discord.trollcall.xyz" boxish span>
                     <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#5865F2", "this-color") %>">
                       <text big>Discord</text>
                       <text>We have a Discord server! It's pretty cool. You should join it!</text>
                     </box>
                   </a>
-                  <a href="https://signup.trollcall.xyz" boxish span>
+                  <a href="//signup.trollcall.xyz" boxish span>
                     <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#FF0000", "this-color") %>">
                       <text big>Signup</text>
                       <text>Want your own fantroll to have a cool refsheet? Simply take this form!</text>
                     </box>
                   </a>
-                  <a href="https://hs.trollcall.xyz" boxish span>
+                  <a href="//hs.trollcall.xyz" boxish span>
                     <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#8000FF", "this-color") %>">
                       <text big>Hiveswap</text>
                       <text>Looking for the original Friendsim TrollCall website? Here it is!</text>
                     </box>
                   </a>
-                  <a href="https://source.trollcall.xyz" boxish span>
+                  <a href="//source.trollcall.xyz" boxish span>
                     <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#000000", "this-color") %>">
                       <text big>Source</text>
                       <text>Want to contribute?</text>
                       <text>...why?</text>
                     </box>
                   </a>
-                  <a href="https://legacy.trollcall.xyz" boxish span>
+                  <a href="//legacy.trollcall.xyz" boxish span>
                     <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#ff0000", "this-color") %>">
                       <text big>Legacy</text>
                       <text>The original TrollCall website. It is most definitely missing characters, but it has more fancy bullshit.</text>
                     </box>
                   </a>
                   <spacer></spacer>
-                  <a href="https://me.trollcall.xyz" boxish span>
+                  <a href="//me.trollcall.xyz" boxish span>
                     <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#FF8000", "this-color") %>">
                       <text big>MeowcaTheoRange</text>
                       <text>Website creator, form manager</text>
                     </box>
                   </a>
-                  <a href="https://redact.trollcall.xyz" boxish span>
+                  <a href="//redact.trollcall.xyz" boxish span>
                     <box outline frame pattern vcontent align-left span style="<%- colors.themeColor("#808080", "this-color") %>">
                       <text big>Redact4K</text>
                       <text>Domain holder</text>
