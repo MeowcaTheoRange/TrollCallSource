@@ -20,7 +20,7 @@
     <box span align-center nopad justify-start>
       <box nopad span noimportant></box>
       <box align-stretch nopad>
-        <%- include('./nav.ejs', {name:name, type:"Pesterlog"}) %>
+        <%- include('./nav.ejs', {name:name, type:"Pesterlog", link:"pester/" + name}) %>
         <box outline span noimportant align-start>
           <text large>Pesterlog - <%- name.replace(/_/gm, " ") %></text>
           <!-- <text><%#- before %></text> -->
@@ -65,7 +65,7 @@
         <box outline parent align-start span noimportant>
           <text big>Links</text>
           <box frame align-left important>
-            <a href="javascript:void(0);" onclick="navigator.clipboard.write('https://trollcall.xyz/pester/<%- name %>')" code>https://trollcall.xyz/pester/<%- name %></a>
+            <a href="https://trollcall.xyz/pester/<%- name %>" onclick="event.preventDefault();navigator.clipboard.writeText(event.target.getAttribute('href'));" code>https://trollcall.xyz/pester/<%- name %></a>
           </box>
         </box>
         <%- include('./footer.ejs') %>

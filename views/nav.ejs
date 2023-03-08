@@ -1,5 +1,5 @@
 <box frame horizontal justify-between noimportant code align-center>
   <a href="/">&lt;== Back</a>
-  <text big><%- locals.name.replace(/_/gm, " ").toAllUpperCase() %></text>
+  <a href="https://trollcall.xyz/<%- link %>" onclick="event.preventDefault();navigator.clipboard.writeText(event.target.getAttribute('href'));"><text big class="FORCEUNDERLINE"><%- locals.name.replace(/_/gm, " ").toAllUpperCase() %></text></a>
   <text><%- type %></text>
 </box>

@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
   </head>
   <body>
-    <%- include('./nav.ejs', {name:main.identity.name, type:"Character"}) %>
+    <%- include('./nav.ejs', {name:main.identity.name, type:"Character", link:"char/" + char}) %>
     <box horizontal nopad align-start justify-start>
       <box nopad strictparent>
         <box outline parent>
@@ -219,12 +219,6 @@
             </box>
           </box>
         </box> -->
-      </box>
-      <box outline parent align-start span noimportant>
-        <text big>Links</text>
-        <box frame align-left important>
-          <a href="javascript:void(0);" onclick="navigator.clipboard.write('https://trollcall.xyz/pester/<%- char %>')" code>https://trollcall.xyz/pester/<%- char %></a>
-        </box>
       </box>
       <%- include('./footer.ejs') %>
     </box>
