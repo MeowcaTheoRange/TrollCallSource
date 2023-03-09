@@ -53,16 +53,15 @@
                 <spacer></spacer>
                 <a href=<%- query.sort ? `"/">(Sort by user)` : `"/blood/">(Sort by caste)` %></a>
                 <box span>
-                  <% console.log(flairs) %>
                 <% array.forEach(function(user){ %>
-                  <box horizontal nopad span vcontent align-center nogap id="<%- user[0] %>"><text big><%- user[0] %></text><% if(flairs[user[0]]) { %>&nbsp;<text frame normal style="<%- colors.themeColor(flairs[user[0]][1], "this-color") %>"><%- flairs[user[0]][0] %></text><% } %><text big><%- query.sort ? "" : (user[0].slice(-1) == "s" ? "'" : "'s") %> Characters</text></box>
+                  <box horizontal nopad span vcontent align-center nogap id="<%- user[0] %>"><text big><%- user[0] %></text><% if(flairs[user[0]]) { %>&nbsp;<text frame normal style="<%- colors.themeColor(flairs[user[0]][1], "this-color") %>"><%- flairs[user[0]][0] %></text><% } %><text big><%- query.sort ? "" : (user[0].slice(-1) == "s" ? "'" : "'s") %>&nbsp;Characters</text></box>
                   <!-- <spacer></spacer> -->
                   <box horizontal align-start span justify-center vcontent>
                     <% user[1].forEach(function(char){ %>
                     <a href="/char/<%- char[0] %>" boxish style="<%- colors.themeColor(zodiac[char[3]].main, "this-color") %>">
                       <box outline strictparent child pattern align-center>
                         <text large><%- char[1] %></text>
-                        <text span><%- query.sort ? char[2] : char[3] %></text>
+                        <text span><%- query.sort ? char[2] : char[3] %><% if(query.sort && flairs[char[2]]) { %>&nbsp;<text frame normal style="<%- colors.themeColor(flairs[char[2]][1], "this-color") %>"><%- flairs[char[2]][0] %></text><% } %></text>
                         <img icon src="/char/<%- char[0] %>/image.png"/>
                       </box>
                     </a>
