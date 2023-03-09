@@ -1,4 +1,5 @@
 thaobi | Thaobi ??? | MeowcaTheoRange | Rust
+temano | Temano Poswan | MeowcaTheoRange | Bronze
 joltif | Joltif Zoxxit | MeowcaTheoRange | Gold
 thaero | Thaero Rhange | MeowcaTheoRange | Olive
 keelez | Keelez Bunbat | MeowcaTheoRange | Jade

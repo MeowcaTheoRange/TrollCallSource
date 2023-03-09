@@ -1,0 +1,111 @@
+{
+  "identity": {
+    "name": "Temano Poswan",
+    "pronunciation": "tay-mon-oh paw-swan",
+    "username": "groovingAeons",
+    "age": 7.85,
+    "sign": {
+      "extended": "Taurist",
+      "caste": "Bronze"
+    },
+    "species": "Troll",
+    "pronouns": [
+      ["he", "him"],
+      ["they", "them"]
+    ],
+    "gender": "Male",
+    "height": "66"
+  },
+  "owners": [
+    {
+      "name": "MeowcaTheoRange",
+      "url": "https://meowcatheorange.github.io/"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "q",
+        "Q"
+      ],
+      [
+        "oo",
+        "∞"
+      ],
+      [
+        "^",
+        "=|=| "
+      ],
+      [
+        "$",
+        " =|=||"
+      ],
+      [
+        "time",
+        "('-)"
+      ]
+    ],
+    "functions": []
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "q",
+        "&"
+      ],
+      [
+        "oo",
+        "∞"
+      ],
+      [
+        "^",
+        "=>=> "
+      ],
+      [
+        "$",
+        " =>=>>"
+      ],
+      [
+        "time",
+        "('-)"
+      ]
+    ],
+    "functions": [
+      ["toLowerCase"]
+    ]
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "yes",
+    "ship": "no",
+    "fanfiction": "ask"
+  },
+  "preferences": {
+    "loves": [
+      "<a href=\"/char/joltif/\">Joltif Zoxxit</a>",
+      "Gruber"
+    ],
+    "likes": [],
+    "neutral": [],
+    "dislikes": [],
+    "hates": [
+      "Time paradoxes"
+    ]
+  },
+  "facts": [
+    "Somehow good at everything you throw at him",
+    "Lightning-fast reflexes",
+    "Homosexual as fuck"
+  ],
+  "colors": [
+    "#1B1B1B",
+    "#ffb838",
+    "#ff9020",
+    "#ff4820",
+    "#c4c4c4",
+    "#FFFFFF",
+    "#313131",
+    "#181818"
+  ]
+}

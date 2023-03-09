@@ -1,4 +1,4 @@
-MeowcaTheoRange | OWNER | #FF8000
+MeowcaTheoRange | OWNER | rgb(511, 255, 0)
 JayzzzTV | TROLLCALL FRIENDSIM | #8000FF
 Madisongs | TROLLCALL FRIENDSIM | #8000FF
 Varcan | SERVER BOOSTER | #00FF80
