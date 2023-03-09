@@ -1,15 +1,19 @@
-<box frame horizontal justify-between noimportant code align-center>
+<box class="clipparent" frame horizontal justify-between noimportant code align-center>
   <a href="/">&lt;== Back</a>
   <a href="https://trollcall.xyz/<%- link %>" onclick="linkClick(event)"><text big class="FORCEUNDERLINE"><%- locals.name.replace(/_/gm, " ").toAllUpperCase() %></text></a>
   <text><%- type %></text>
+  <box frame id="ClipPrompt"></box>
 </box>
-<box frame id="ClipPrompt"></box>
 <style>
+  .clipparent {
+    position: relative;
+    overflow: visible;
+  }
   #ClipPrompt {
     opacity: 0;
     pointer-events: none;
     position: absolute;
-    top: 72px;  
+    top: calc(100% + 4px);
     left: 50%; 
     transform: translateX(-50%);
     transition: opacity 2s;
@@ -24,7 +28,7 @@
     console.log(e.target.parentElement);
     e.preventDefault();
     navigator.clipboard.writeText(e.target.parentElement.getAttribute('href'));
-    document.getElementById("ClipPrompt").innerHTML = `<text>Copied <i>${e.target.parentElement.getAttribute('href')}</i> to clipboard</text>`;
+    document.getElementById("ClipPrompt").innerHTML = `<text normal>Copied <i>${e.target.parentElement.getAttribute('href')}</i> to clipboard</text>`;
     document.getElementById("ClipPrompt").classList.add("ClipVisible");
     setTimeout(() => {
       document.getElementById("ClipPrompt").classList.remove("ClipVisible");

@@ -59,8 +59,9 @@ var getPester = (pester) => {
     var thing = xlog.split(": ");
 
     logJSON.push({
-      "character": thing[0].replace(/~/g, ""),
+      "character": thing[0].replace(/~/g, "").replace(/_.*$/, ""),
       "whispering": thing[0].includes("~"),
+      "timeframe": thing[0].includes("_") ? thing[0].replace(/^.*_/, "") : "",
       "text": thing[1]
     });
   });

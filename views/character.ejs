@@ -46,7 +46,7 @@
           <text big>Owner<%- main.owners.length > 1 ? "s" : "" %></text>
           <box frame align-left important>
             <% main.owners.forEach(function(owner){ %>
-              <box nopad span horizontal vcontent align-center nogap><a href="<%- owner.url %>" code><%- owner.name %></a><% if(flairs[owner.name]) { %>&nbsp;<text frame normal style="<%- colors.themeColor(flairs[owner.name][1], "this-color") %>"><%- flairs[owner.name][0] %></text><% } %></box>
+              <box class="nameFlairHolder" nopad span horizontal align-center nogap><a href="<%- owner.url %>" code><%- owner.name %></a><% if(flairs[owner.name]) { %>&nbsp;<text frame normal style="<%- colors.themeColor(flairs[owner.name][1], "this-color") %>"><%- flairs[owner.name][0] %></text><% } %></box>
             <% }); %>
           </box>
         </box>

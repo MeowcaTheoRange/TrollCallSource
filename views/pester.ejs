@@ -27,13 +27,13 @@
           <!-- <text><%#- before %></text> -->
           <pesterlog>
             <dialogue>
-              <span style="color: rgb(<%- zodiac[chars[charsList[0]].caste].text %>)"><%- chars[charsList[0]].name %> [<%- chars[charsList[0]].nameshort %>]</span> 
+              <a href="/char/<%- charsList[0] %>"><span style="color: rgb(<%- zodiac[chars[charsList[0]].caste].text %>)"><%- chars[charsList[0]].name %> [<%- chars[charsList[0]].nameshort %>]</span></a> 
               began trolling 
-              <span style="color: rgb(<%- zodiac[chars[charsList[1]].caste].text %>)"><%- chars[charsList[1]].name %> [<%- chars[charsList[1]].nameshort %>]</span>.
+              <a href="/char/<%- charsList[1] %>"><span style="color: rgb(<%- zodiac[chars[charsList[1]].caste].text %>)"><%- chars[charsList[1]].name %> [<%- chars[charsList[1]].nameshort %>]</span></a>.
             </dialogue>
             
             <% list.forEach(function(dialogue){ %>
-            <dialogue style="color: rgb(<%- zodiac[chars[dialogue.character].caste].text %>)"><%- chars[dialogue.character].nameshort %>: <%- quirkify(dialogue.character, dialogue.text, dialogue.whispering) %></dialogue>
+              <dialogue style="color: rgb(<%- zodiac[chars[dialogue.character].caste].text %>)"><%- dialogue.timeframe[0]?.toUpperCase() %><%- chars[dialogue.character].nameshort %>: <%- quirkify(dialogue.character, dialogue.text, dialogue.whispering) %></dialogue>
             <% }); %>
 
             <dialogue>

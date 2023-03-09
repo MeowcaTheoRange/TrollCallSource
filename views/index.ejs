@@ -61,7 +61,7 @@
                     <a href="/char/<%- char[0] %>" boxish style="<%- colors.themeColor(zodiac[char[3]].main, "this-color") %>">
                       <box outline strictparent child pattern align-center>
                         <text large><%- char[1] %></text>
-                        <text span><%- query.sort ? char[2] : char[3] %><% if(query.sort && flairs[char[2]]) { %>&nbsp;<text frame normal style="<%- colors.themeColor(flairs[char[2]][1], "this-color") %>"><%- flairs[char[2]][0] %></text><% } %></text>
+                        <text class="nameFlairHolder" span><%- query.sort ? char[2] : char[3] %><% if(query.sort && flairs[char[2]]) { %>&nbsp;<text frame normal style="<%- colors.themeColor(flairs[char[2]][1], "this-color") %>"><%- flairs[char[2]][0] %></text><% } %></text>
                         <img icon src="/char/<%- char[0] %>/image.png"/>
                       </box>
                     </a>
