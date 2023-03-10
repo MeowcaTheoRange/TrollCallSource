@@ -1,6 +1,10 @@
 <box class="clipparent" frame horizontal justify-between noimportant code align-center>
   <a href="/">&lt;== Back</a>
+  <% if (locals.link) { %> 
   <a href="https://trollcall.xyz/<%- link %>" onclick="linkClick(event)"><text big class="FORCEUNDERLINE"><%- locals.name.replace(/_/gm, " ").toAllUpperCase() %></text></a>
+  <% } else { %> 
+    <text big><%- locals.name.replace(/_/gm, " ").toAllUpperCase() %></text>
+  <% } %>
   <text><%- type %></text>
   <box frame id="ClipPrompt"></box>
 </box>

@@ -18,43 +18,60 @@
   <body>
     <%- include('./nav.ejs', {name:"Submissions", type:"Meta"}) %>
     <box outline align-start noimportant>
-      <input type="text" titleBox bg />
+      <input class="nameSubmit" type="text" titleBox bg />
       <text>(pronounced like <input type="text" bg />)</text>
       <text>Also known as <text frame code><input type="text" name="user" id="username" /> <input type="text" readonly id="username2" /></text> online.</text>
       <textarea bg></textarea>
       <text>Age: <input type="number" name="years" id="years" bg /> years (<input type="number" name="sweeps" id="sweeps" bg /> sweeps)</text>
       <text>Sign: <input type="text" name="extended" bg /> (<select bg name="zodiac" id="zod"></select> caste)</text>
-      <text>Species: <text code frame>Troll<input type="text" name="species" value="-" /></text></text>
+      <text>Species: <text code frame>Troll<input type="text" name="species" value="" /></text></text>
       <text>Gender: <input type="text" name="gender" bg value="" /></text>
       <text>Pronouns: <input type="text" bg name="pronouns" /></text>
+      <text big>Owner(s)</text>
+      <box frame code span id="OwnerThing">
+      </box>
+      <box horizontal>
+        <button onclick="newElemetnThing('#OwnerThing')" bg>+</button>
+        <button onclick="lessElemetnThing('#OwnerThing')" bg>-</button>
+      </box>
     </box>
     <box outline align-start noimportant>
+      <text big>Policies</text>
       <box frame code span>
-        <text><select name="artare" id="zod">
+        <text><select name="artare">
           <option value="yes">Yes</option>
           <option value="ask">Ask</option>
           <option selected value="no">No</option>
         </select> Making art of this character.</text>
-        <text><select name="artothers" id="zod">
+        <text><select name="artothers">
           <option value="yes">Yes</option>
           <option value="ask">Ask</option>
           <option selected value="no">No</option>
         </select> Making art of this character with other characters.</text>
-        <text><select name="artkin" id="zod">
+        <text><select name="artkin">
           <option value="yes">Yes</option>
           <option value="ask">Ask</option>
           <option selected value="no">No</option>
         </select> Kinning this character.</text>
-        <text><select name="artship" id="zod">
+        <text><select name="artship">
           <option value="yes">Yes</option>
           <option value="ask">Ask</option>
           <option selected value="no">No</option>
         </select> Shipping this character with others.</text>
-        <text><select name="artfan" id="zod">
+        <text><select name="artfan">
           <option value="yes">Yes</option>
           <option value="ask">Ask</option>
           <option selected value="no">No</option>
         </select> Creating fanfiction of this character.</text>
+      </box>
+    </box>
+    <box outline align-start noimportant>
+      <text big>Likes/Dislikes</text>
+      <box frame code span id="LovesThing">
+      </box>
+      <box horizontal>
+        <button onclick="newElemetnThing('#LovesThing')" bg>+</button>
+        <button onclick="lessElemetnThing('#LovesThing')" bg>-</button>
       </box>
     </box>
     <script type="module">
@@ -69,6 +86,6 @@
         color.themeColor(color.negate(zodiac[select.value].main), "sec");
       }; select.onchange();
     </script>
-    <script type="module" src="/assets/scripts/submit.js"></script>
+    <script src="/assets/scripts/submit.js"></script>
   </body>
 </html>

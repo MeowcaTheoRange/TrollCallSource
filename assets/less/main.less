@@ -118,10 +118,49 @@ body {
       font-family: 'Krona One', sans-serif;
       text-transform: uppercase;
     }
+
+    &[span] {
+      width: 40ch;
+    }
+  }
+
+  & button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: var(--this-color20);
+    color: var(--this-color80);
+
+    &[bg] {
+      --this-color0: var(--sec0);
+      --this-color10: var(--sec10);
+      --this-color20: var(--sec20);
+      --this-color30: var(--sec30);
+      --this-color40: var(--sec40);
+      --this-color50: var(--sec50);
+      --this-color60: var(--sec60);
+      --this-color70: var(--sec70);
+      --this-color80: var(--sec80);
+      --this-color90: var(--sec90);
+      --this-color100: var(--sec100);
+      font-family: 'Inconsolata', sans-serif;
+      padding: 4px;
+      border-radius: 8px;
+    }
+
+    &:hover, &:focus {
+      background-color: var(--this-color30);
+      color: var(--this-color70);
+    }
+
+    &:active {
+      background-color: var(--this-color10);
+      color: var(--this-color90);
+    }
   }
 
   & textarea {
-    width: 80ch;
+    width: 40ch;
     height: 40ch;
     overflow:auto;
     resize: horizontal;

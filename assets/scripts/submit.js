@@ -17,3 +17,25 @@ years.onkeyup = () => {
 sweeps.onkeyup = () => {
   years.value = (sweeps.value * 2.166666666).toFixed(2).toString();
 };
+
+var temps = {
+  "#LovesThing": `<select name="artare">
+  <option value="loves">Loves</option>
+  <option value="likes">Likes</option>
+  <option selected value="neutral">Neutral</option>
+  <option value="dislikes">Dislikes</option>
+  <option value="hates">Hates</option>
+</select> <input span type="text" name="ldpos" bg placeholder="Item..." />`,
+  "#OwnerThing": `<input span type="text" name="ownername" bg placeholder="Name..." /> <input span type="text" name="ownerurl" bg placeholder="URL..." />`
+}
+
+function newElemetnThing(elemmm) {
+  var ele = document.createElement("text");
+  ele.setAttribute('span', "");
+  ele.innerHTML = temps[elemmm];
+  document.querySelector(elemmm).appendChild(ele);
+}
+function lessElemetnThing(elemmm) {
+  var parent = document.querySelector(elemmm)
+  parent.removeChild(parent.lastChild);
+}
