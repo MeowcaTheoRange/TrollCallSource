@@ -1,0 +1,82 @@
+{
+  "identity": {
+    "name": "Landon Konner",
+    "pronunciation": "land-den con-nur",
+    "username": "statisticalAnomalies",
+    "age": 7,
+    "sign": {
+      "extended": "Lipia",
+      "caste": "Teal"
+    },
+    "species": "Troll",
+    "pronouns": [
+      ["they", "them"]
+    ],
+    "gender": "Non-Binary",
+    "height": "65"
+  },
+  "owners": [
+    {
+      "name": "MeowcaTheoRange",
+      "url": "https://meowcatheorange.github.io/"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      ["^", "‾\\_,- "],
+      ["$", " ---,__"]
+    ],
+    "functions": [
+      ["toFirstUpperCase"]
+    ]
+  },
+  "quirksQuiet": {
+    "regexes": [
+      ["^", "‾\\___ "],
+      ["$", " ____,-"]
+    ],
+    "functions": [
+      ["toLowerCase"]
+    ]
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "yes",
+    "ship": "no",
+    "fanfiction": "ask"
+  },
+  "preferences": {
+    "loves": [
+    ],
+    "likes": [
+      "<a href=\"/char/thaobi/\">Thaobi ???</a>, probably"
+    ],
+    "neutral": [
+      "Fancy suits"
+    ],
+    "dislikes": [
+      "The Alternian legal business, in general",
+      "<s>The Alternian legal</s> Business, in general"
+    ],
+    "hates": []
+  },
+  "facts": [
+    "Water is their best friend",
+    "Low sanity, high demand",
+    "Cushy towards the lower caste members",
+    "<i>Thanks Domain Holder redact :^]</i>"
+  ],
+  "colors": [
+    "#151515",
+    "#1A1A1A",
+    "#ffb838",
+    "#ff9020",
+    "#ff4820",
+    "#C4C4C4",
+    "#404040",
+    "#008282",
+    "#313131",
+    "#181818"
+  ]
+}
