@@ -123,6 +123,11 @@ function images(cb) {
     .pipe(dest('../TrollCall/assets/images'));
 }
 
+function error(cb) {
+  return src('assets/error/*')
+    .pipe(dest('../TrollCall/assets/error'));
+}
+
 function scripts(cb) {
   return src('assets/scripts/*')
     .pipe(dest('../TrollCall/assets/scripts'));
@@ -205,4 +210,4 @@ async function blood(cb) {
     .pipe(dest("../TrollCall/blood/"));
 }
 
-exports.default = parallel(EJS, EJSPester, styles, LESS, images, scripts, pics, index, blood, bake404);
+exports.default = parallel(EJS, EJSPester, styles, LESS, images, scripts, pics, index, blood, bake404, error);
