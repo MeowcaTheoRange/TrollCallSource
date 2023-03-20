@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TrollCall</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/mspa.css" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon"/>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TrollCall -- Not Found">
+    <meta property="og:url" content="/404/">
+    <!-- <meta property="og:description" content="<%#- before %>"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20,700,1" rel="stylesheet" />
+  </head>
+  <body>
+    <box span align-center nopad justify-start class="overflow">
+      <box nopad span noimportant></box>
+      <box align-stretch nopad class="overflow">
+        <%- include('./nav.ejs', {name:"Not Found", type:"Error", link:"404"}) %>
+        <div id="friendsim">
+          <img id="friendsim_img" src="/assets/error/404_0.png" />
+          <div id="friendsim_box">
+            <text large>Tyzias</text>
+            <text id="boxdialog"><noscript>you shouldn't be here<br/>
+                also you have javascript disabled so this mmmminigammmme doesn't wwwwork<br/>
+                i recommmmmmmmend enabling it, personally
+            </noscript></text>
+          </div>
+        </div>
+        <%- include('./footer.ejs') %>
+      </box>
+    </box>
+    <script type="module">
+      import * as color from "/assets/scripts/color.js";
+      color.themeColor("#00ffff", "pri");
+      color.themeColor("#ff0000", "sec");
+    </script>
+    <script defer>
+var dlimg = document.getElementById("friendsim_img");
+var bdialog = document.getElementById("boxdialog");
+var main = document.getElementById("friendsim");
+
+var isTalking = false;
+var dialogue = [
+  ["", "404_3"],
+  ["excuse mmmme wwwwhat the fuck", "404_0"],
+  ["you shouldn't be here", "404_0"],
+  ["did you get lost" + (location.pathname === "/404" ? "" : " wwwwhile going to " + location.pathname.replace(/(m|w)/gm, "$1$1$1$1")), "404_2"],
+  ["figures", "404_4"],
+  ["", "404_3"],
+  ["huh", "404_2"],
+  ["wwwwhat's that? wwwwhy ammmm i here?", "404_0"],
+  ["that's none of your fucking business", "404_1"],
+  ["also", "404_0"],
+  ["leave", "404_0"],
+  ["", "404_3"]
+];
+var talkindex = 0;
+var speakindex = 0;
+document.addEventListener('keydown', e => {if (e.key == " " || e.code == "Space" || e.keyCode == 32) progress(e)});
+main.addEventListener('click', progress);
+function progress(e) {
+  e.preventDefault();
+  if (isTalking) {
+    speakindex = dialogue[talkindex][0].length
+  } else {
+    talkindex++;
+    if (talkindex >= dialogue.length) {
+      location.href = "/";
+      return;
+    }
+    try {
+      talkLol(dialogue[talkindex]);
+    } catch (err) {
+      talkLol(["oh hey by the wwwway, " + err.toString().toLowerCase().replace(/(m|w)/gm, "$1$1$1$1").replace(/\./gm, ""), "404_4"]);
+    }
+  }
+};
+function talkLol(dlg) {
+  isTalking = true;
+  speakindex = 0;
+  dlimg.src = "/assets/error/" + dlg[1] + ".png";
+  var x = setInterval(() => {
+    if (speakindex > dlg[0].length) {
+      console.log("Done");
+      isTalking = false;
+      clearInterval(x);
+    }
+    bdialog.innerHTML = dlg[0].slice(0, speakindex);
+    speakindex++;
+  }, 50)
+}
+talkLol(dialogue[talkindex])
+    </script>
+    <style>
+.overflow {
+  overflow: visible;
+}
+
+#friendsim {
+  padding: 0;
+  display: inline-block;
+  width: calc(100vw - 64px);
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
+  background-color: black;
+  border: 1px solid var(--this-color80);
+  box-shadow: 0 0 0 2px var(--this-color40);
+  border-radius: 8px;
+  position: relative;
+}
+
+#friendsim_box {
+  position: absolute;
+  bottom: 3.33%;
+  left: 8.335%;
+  width: 83.33%;
+  height: 31.25%;
+  background-image: url("/assets/images/pattern.svg");
+  background-color: var(--this-color20);
+  background-size: 25%;
+  border: 2px solid var(--this-color80);
+  border-radius: 8px;
+  text-align: left;
+  padding: 0.83%;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+  gap: 0.83%;
+  box-sizing: border-box;
+}
+
+#boxdialog {
+  padding: 0.83%;
+  border-radius: 8px;
+  background-color: var(--this-color10);
+  color: var(--this-color-90);
+  height: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+#friendsim_img {
+
+}
+    </style>
+  </body>
+</html>

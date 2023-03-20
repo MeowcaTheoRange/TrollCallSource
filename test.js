@@ -139,4 +139,8 @@ app.get('/submit/', (req, res) => {
   });
 });
 
+app.use((req, res, next) => {
+  res.status(404).render('404', {colors});
+})
+
 app.listen(5500);

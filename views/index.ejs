@@ -26,6 +26,7 @@
             <text>Welcome to TrollCall, a website for indexing various fantrolls. Check them out!</text>
           </box>
         </box>
+        <%- include('./noscript.ejs') %>
         <box horizontal span nopad>
           <box outline span important strictparent content>
             <!-- <box align-start noimportant frame>
@@ -52,7 +53,7 @@
                 <text large id="chars">Characters</text>
                 <spacer></spacer>
                 <a href=<%- query.sort ? `"/">(Sort by user)` : `"/blood/">(Sort by caste)` %></a>
-                <box span>
+                <box span id="charactersHolder">
                 <% array.forEach(function(user){ %>
                   <box horizontal nopad span vcontent align-center nogap id="<%- user[0] %>"><text big><%- user[0] %></text><% if(flairs[user[0]]) { %>&nbsp;<text frame normal style="<%- colors.themeColor(flairs[user[0]][1], "this-color") %>"><%- flairs[user[0]][0] %></text><% } %><text big><%- query.sort ? "" : (user[0].slice(-1) == "s" ? "'" : "'s") %>&nbsp;Characters</text></box>
                   <!-- <spacer></spacer> -->
@@ -151,6 +152,18 @@
       import * as color from "/assets/scripts/color.js";
       color.themeColor("#ffffff", "pri");
       color.themeColor("#000080", "sec");
+
+      var chholder = document.getElementById("charactersHolder");
+      if (Math.random() * 64 <= 1) chholder.innerHTML += `<box horizontal nopad span vcontent align-center nogap id="Hiveswap"><text big>Hiveswap Characters</text></box>
+      <box horizontal align-start span justify-center vcontent>
+        <a href="/404" boxish style="<%- colors.themeColor("#00FFFF", "this-color") %>">
+          <box outline strictparent child pattern align-center>
+            <text large>Tyzias Entykk</text>
+            <text class="nameFlairHolder" span><%- query.sort ? "" : "Teal" %></text>
+            <img icon src="/404/imsurethisimagedoesNOTexist.png"/>
+          </box>
+        </a>
+      </box>`;
     </script>
   </body>
 </html>
