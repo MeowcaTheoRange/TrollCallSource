@@ -165,6 +165,19 @@ async function index(cb) {
     .pipe(dest("../TrollCall/"));
 }
 
+async function bake404(cb) {
+  return src('views/404.ejs')
+    .pipe(ejs({ 
+      colors
+    }))
+    .pipe(rename({
+      dirname: "",
+      basename: "404",
+      extname: ".html"
+    }))
+    .pipe(dest("../TrollCall/"));
+}
+
 async function blood(cb) {
   var array = fs.readFileSync("assets/list.txt", "utf-8");
   var logs = fs.readFileSync("assets/logs.txt", "utf-8").split("\n").map(x => x.split(" | "));
@@ -192,4 +205,4 @@ async function blood(cb) {
     .pipe(dest("../TrollCall/blood/"));
 }
 
-exports.default = parallel(EJS, EJSPester, styles, LESS, images, scripts, pics, index, blood);
+exports.default = parallel(EJS, EJSPester, styles, LESS, images, scripts, pics, index, blood, bake404);
