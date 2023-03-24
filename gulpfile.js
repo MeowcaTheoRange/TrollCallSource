@@ -134,7 +134,7 @@ function scripts(cb) {
 }
 
 function styles(cb) {
-  return src('assets/styles/*')
+  return src('assets/styles/**/*')
     .pipe(dest('../TrollCall/assets/styles'));
 }
 
