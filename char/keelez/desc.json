@@ -6,7 +6,7 @@
     "age": 7.85,
     "sign": {
       "extended": "Virsces",
-      "caste": "Jade"
+      "caste": "Rust"
     },
     "species": "Troll",
     "pronouns": [
@@ -24,24 +24,28 @@
   "quirks": {
     "regexes": [
       [
-        "^",
-        "<i>"
+        "a",
+        "@"
       ],
       [
-        "$",
-        "</i>"
+        "^",
+        "$$ "
       ]
     ]
   },
   "quirksQuiet": {
     "regexes": [
       [
+        "a",
+        "@"
+      ],
+      [
         "^",
-        "<i>"
+        "$$ \""
       ],
       [
         "$",
-        "</i>"
+        "\""
       ]
     ],
     "functions": [
@@ -58,26 +62,16 @@
     "fanfiction": "ask"
   },
   "preferences": {
-    "loves": [
-      "Timesheet calendars",
-      "Nixgrub"
-    ],
+    "loves": [],
     "likes": [],
-    "neutral": [
-      "Drawers"
-    ],
+    "neutral": ["Everything."],
     "dislikes": [],
-    "hates": [
-      "Grubshell packaging"
-    ]
+    "hates": []
   },
   "facts": [
-    "Thinks KDE is cool",
-    "Too privacy-concerned for her own good",
-    "Goddamn Goregle",
-    "Not very good posture",
-    "Obsessively organizes her files into small folders",
-    "Module lover"
+    "Wears the wrong blood color on purpose",
+    "Freedom activist",
+    "Has no time for Alternian bullshit"
   ],
   "colors": [
     "#1B1B1B",

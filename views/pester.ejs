@@ -23,7 +23,7 @@
       <box align-stretch nopad>
         <%- include('./nav.ejs', {name:name, type:"Pesterlog", link:"pester/" + name}) %>
         <box outline span noimportant align-start>
-          <text large>Pesterlog - <%- name.replace(/_/gm, " ") %></text>
+          <text large><%- name.replace(/_/gm, " ") %></text>
           <!-- <text><%#- before %></text> -->
           <pesterlog>
             <dialogue>
