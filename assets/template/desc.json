@@ -1,0 +1,57 @@
+{
+  "identity": {
+    "name": "[FIRST] [LAST]",
+    "pronunciation": "[All lowercase, please! Separate syllables with dashes.]",
+    "username": "[Pesterchum handle format.]",
+    "age": /* Age in sweeps. Allows decimal numbers. */,
+    "sign": {
+      "extended": "[Extended Zodiac sign.]",
+      "caste": "[Caste index (Rust, Jade, etc...)]"
+    },
+    "species": "Troll[species quirk (Troll-human, etc...)]",
+    "pronouns": [
+      // Pronouns in array format.
+      // For example, ["she", "her"].
+    ],
+    "gender": "[Gender]",
+    "height": /* Height in inches. */
+  },
+  "owners": [
+    // Array of owner objects.
+    { // Duplicate based on how many people own/contributed to this character.
+      "name": "[Your username]",
+      "url": "[A link to social media]"
+    }
+  ],
+  "quirks": { // Typing quirks.
+    "regexes": [
+      [ // Regex. Flags: /gi. Duplicate to your liking.
+        "[MATCH]",
+        "[RELPACEMENT]"
+      ]
+    ],
+    "functions": [
+      [ // JS Functions, for advanced quirk stuff. Optional. Duplicate to your liking.
+        "[JAVASCRIPT FUNCTION]",
+        [/* Optional arguments array. Any type. */]
+      ]
+    ]
+  },
+  "quirksQuiet": {}, // Ditto, but duplicated.
+  "policies": {
+    "art": "[yes | ask | no]",
+    "artOthers": "[yes | ask | no]",
+    "kin": "[yes | ask | no]",
+    "ship": "[yes | ask | no]",
+    "fanfiction": "[yes | ask | no]"
+  },
+  "preferences": {
+    "loves": [/* Array of strings. "loves" array required to be present, even if blank. */],
+    "likes": [/* Array of strings. "likes" array required to be present, even if blank. */],
+    "neutral": [/* Array of strings. "neutral" array required to be present, even if blank. */],
+    "dislikes": [/* Array of strings. "dislikes" array required to be present, even if blank. */],
+    "hates": [/* Array of strings. "hates" array required to be present, even if blank. */]
+  },
+  "facts": [/* Array of strings. Minimum of 3. */],
+  "colors": [/* Array of colors in CSS Hex/RGB format. */]
+}
