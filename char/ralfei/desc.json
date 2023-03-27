@@ -1,0 +1,77 @@
+{
+  "identity": {
+    "name": "Ralfei Rivini",
+    "pronunciation": "RAL-fay ruh-VEE-nee",
+    "username": "ambiguousTotality",
+    "age": 8,
+    "sign": {
+      "extended": "Arlo",
+      "caste": "Rust"
+    },
+    "species": "Troll",
+    "pronouns": [
+      ["he", "him"]
+    ],
+    "gender": "Male",
+    "height": "63"
+  },
+  "owners": [
+    {
+      "name": "Madisongs",
+      "url": "https://madisongs.carrd.co"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "^",
+        "𝓜 | "
+      ],
+      [
+        "$",
+        " | 𝓜"
+      ],
+      [
+        "m",
+        "M"
+      ]
+    ]
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "^",
+        "𝓜 | "
+      ],
+      [
+        "$",
+        " | 𝓜"
+      ],
+      [
+        "m",
+        "M"
+      ]
+    ],
+    "functions": []
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "yes",
+    "ship": "yes",
+    "fanfiction": "yes"
+  },
+  "preferences": {
+    "loves": ["Troll Eddsworld", "Robotics"],
+    "likes": ["Hanging out with his moirail"],
+    "neutral": [],
+    "dislikes": ["scavenging for DIY materials"],
+    "hates": []
+  },
+  "facts": [
+    "The sign on his shirt is not his actual sign, nor is the one listed on the extended zodiac his actual sign."
+  ],
+  "colors": [
+    "#000000"
+  ]
+}

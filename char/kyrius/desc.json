@@ -1,0 +1,93 @@
+{
+  "identity": {
+    "name": "Kyrius Nevaad",
+    "pronunciation": "kai-reese nev-ahd",
+    "username": "keroseneDisassociation",
+    "age": 7.5,
+    "sign": {
+      "extended": "Virpia",
+      "caste": "Jade"
+    },
+    "species": "Troll",
+    "pronouns": [
+      ["she", "her"]
+    ],
+    "gender": "Female",
+    "height": "71"
+  },
+  "owners": [
+    {
+      "name": "Varcan",
+      "url": "https://twitter.com/VarcanOctave/"
+    }
+  ],
+  "quirks": {
+    "regexes": [
+      [
+        "i",
+        "!"
+      ],
+      [
+        "o",
+        "00"
+      ],
+      [
+        "\\?$",
+        "."
+      ],
+      [
+        "!$",
+        "."
+      ]
+    ]
+  },
+  "quirksQuiet": {
+    "regexes": [
+      [
+        "o",
+        "oo"
+      ],
+      [
+        "\\?$",
+        "."
+      ],
+      [
+        "!$",
+        "."
+      ]
+    ],
+    "functions": []
+  },
+  "policies": {
+    "art": "yes",
+    "artOthers": "yes",
+    "kin": "yes",
+    "ship": "yes",
+    "fanfiction": "ask"
+  },
+  "preferences": {
+    "loves": ["Alchemy of any kind", "Plants"],
+    "likes": ["Potent formulas", "Test subjects"],
+    "neutral": [],
+    "dislikes": ["The majority of celebrities"],
+    "hates": ["scratchy fabrics"]
+  },
+  "facts": [
+    "Has saved at least 100 trolls from her medicines",
+    "Grows her own materials for medicines",
+    "30% of her diet is stews from Vryano"
+  ],
+  "colors": [
+    "#1B1B1B",
+    "#ffb838",
+    "#ff9020",
+    "#ff4820",
+    "#c0c0c0",
+    "#ffffff",
+    "#122B1F",
+    "#344E42",
+    "#4F4F4F",
+    "#046938",
+    "#008445"
+  ]
+}
