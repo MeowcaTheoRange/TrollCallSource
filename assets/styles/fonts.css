@@ -63,9 +63,9 @@
   font-family: 'TrollCall Display';
   font-style: normal;
   font-weight: 400;
-  src: url(https://github.com/MeowcaTheoRange/Fonts/raw/master/TrollCall%20Display/v2/TrollCallDisplay-Regular.woff2) format('woff2');
-  src: url(https://github.com/MeowcaTheoRange/Fonts/raw/master/TrollCall%20Display/v2/TrollCallDisplay-Regular.woff) format('woff');
-  src: url(https://github.com/MeowcaTheoRange/Fonts/raw/master/TrollCall%20Display/v2/TrollCallDisplay-Regular.otf) format('opentype');
+  src: url(https://meowcatheorange.github.io/Fonts/TrollCall%20Display/v2/TrollCallDisplay-Regular.woff2) format('woff2');
+  src: url(https://meowcatheorange.github.io/Fonts/TrollCall%20Display/v2/TrollCallDisplay-Regular.woff) format('woff');
+  src: url(https://meowcatheorange.github.io/Fonts/TrollCall%20Display/v2/TrollCallDisplay-Regular.otf) format('opentype');
 }
 
 /* cyrillic-ext */
